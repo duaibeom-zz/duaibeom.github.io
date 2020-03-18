@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mls on Beom&#39;s Doodle</title>
+    <link>https://duaibeom.github.io/ml/</link>
+    <description>Recent content in Mls on Beom&#39;s Doodle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://duaibeom.github.io/ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Machine Learning Lecture</title>
+      <link>https://duaibeom.github.io/ml/mllecture/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/ml/mllecture/</guid>
+      <description>CSEP 546 - Machine Learning - Autumn 2019 @Geoff Hulten PEDRO DOMINGOS
+Site &amp;amp; Note
+Tom Mitchell
+Video
+CS230 - CS230: Deep Learning | Autumn 2018 Site &amp;amp; NoteVideo</description>
+    </item>
+    
+    <item>
+      <title>머신 러닝</title>
+      <link>https://duaibeom.github.io/ml/machine_learning/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/ml/machine_learning/</guid>
+      <description>How to get weight in keras ? weights = [layer.get_weights() for layer in model.layers] weights and bias is printed.</description>
+    </item>
+    
+  </channel>
+</rss>

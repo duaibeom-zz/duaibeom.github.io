@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Beom&#39;s Doodle</title>
+    <link>https://duaibeom.github.io/posts/</link>
+    <description>Recent content in Posts on Beom&#39;s Doodle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://duaibeom.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>저장용 논문</title>
+      <link>https://duaibeom.github.io/posts/paper/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/paper/</guid>
+      <description>Nature&amp;rsquo;s papers   Predicting drug–protein interaction using quasi-visual question answering system, Nat Mach Intell 2, 134–140 (2020)
+  Aqueous pKa prediction for tautomerizable compounds using equilibrium bond lengths, Commun Chem 3, 21 (2020).</description>
+    </item>
+    
+    <item>
+      <title>자기 개발</title>
+      <link>https://duaibeom.github.io/posts/mind/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/mind/</guid>
+      <description>생산성 떨어뜨리는 시간에 대한 착각 by T Times 스마트폰과 인터넷 때문에 과거보다 집중하기 어려운 환경이 됐고 한 번에 여러 가지 일을 하는 멀티태스킹이 능력인 것처럼 여겨지기 때문이다.</description>
+    </item>
+    
+  </channel>
+</rss>

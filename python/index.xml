@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pythons on Beom&#39;s Doodle</title>
+    <link>https://duaibeom.github.io/python/</link>
+    <description>Recent content in Pythons on Beom&#39;s Doodle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://duaibeom.github.io/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pytesseract</title>
+      <link>https://duaibeom.github.io/python/pytesseract/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/pytesseract/</guid>
+      <description>Project description Python-tesseract is an optical character recognition (OCR) tool for python. That is, it will recognize and “read” the text embedded in images.</description>
+    </item>
+    
+    <item>
+      <title>Matplotlib</title>
+      <link>https://duaibeom.github.io/python/matplotlib/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/matplotlib/</guid>
+      <description>Matplotlib 사용법 저장 How-to
+rcParams</description>
+    </item>
+    
+    <item>
+      <title>Pillow (PIL Fork)</title>
+      <link>https://duaibeom.github.io/python/pillow/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/pillow/</guid>
+      <description>gg</description>
+    </item>
+    
+    <item>
+      <title>정규화 표현식(Regular Expression)</title>
+      <link>https://duaibeom.github.io/python/regexp/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/regexp/</guid>
+      <description>wikipedia_kr
+반복 관련 메타 문자 * 0회
++ 1회
+? 0 또는 1회
+{m(, n)} m회부터 n회까지
+반복 관련 메타 문자 .</description>
+    </item>
+    
+    <item>
+      <title>Python3</title>
+      <link>https://duaibeom.github.io/python/python3/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/python3/</guid>
+      <description>PYTHON3 NOTE char.isdigit()
+char.isupper()
+char.islower()
+print(float(&#39;&#39;.join(filter(str.isdigit, x))))Extract number from a string
+SomeStr.endswith((&#39;multiple&#39;, &#39;suffixes&#39;))
+가상환경 만들기 가상 환경의 장점은
+ 가상환경은 다양한 버전의 Python 및 Python package 설치가 가능하다.</description>
+    </item>
+    
+    <item>
+      <title>Rdkit note</title>
+      <link>https://duaibeom.github.io/python/rdkit/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/rdkit/</guid>
+      <description>Rdkit 사용법 저장 Conda 를 이용한 rdkit 설치. RDKIT을 콘다를 이용하지 않고, 설치하는 방법은 매우 어렵다. (lib 문제로 설치가 어렵다.)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Linux Tip - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Linux Tip" />
+<meta property="og:description" content="Linux Tip Adding Storage  sudo fdisk -l or sudo lshw -C disk sudo fdisk /dev/sd&lt;?&gt; We want to add a new partition." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://duaibeom.github.io/computer/linux/" />
+<meta property="article:published_time" content="2019-10-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-25T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux Tip"/>
+<meta name="twitter:description" content="Linux Tip Adding Storage  sudo fdisk -l or sudo lshw -C disk sudo fdisk /dev/sd&lt;?&gt; We want to add a new partition."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.iocss/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.iocss/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.iocss/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.iocss/dark.css"  />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.iocss/custom-dark.css"  />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://duaibeom.github.iojs/main.js"></script>
+	<script src="https://duaibeom.github.iojs/abc.js"></script>
+	<script src="https://duaibeom.github.iojs/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="https://duaibeom.github.io">Beom&#39;s Doodle</a></h1>
+	<div class="site-description"><h2>Chemistry | Computer | What is next?</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/duaibeom" title="Github"><i data-feather="github"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">posts</a>
+			</li>
+			
+			<li>
+				<a href="/computer">Computer</a>
+			</li>
+			
+			<li>
+				<a href="/python">Python</a>
+			</li>
+			
+			<li>
+				<a href="/ml">Machine Learning</a>
+			</li>
+			
+			<li>
+				<a href="/flutter">Flutter</a>
+			</li>
+			
+			<li>
+				<a href="/go">Go lang.</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Linux Tip</h1>
+			<div class="meta">Posted at &mdash; Oct 25, 2019</div>
+		</div>
+
+		<div class="markdown">
+			<h1 id="linux-tip">Linux Tip</h1>
+<h2 id="adding-storagehttpshelpubuntucomcommunityinstallinganewharddrive"><a href="https://help.ubuntu.com/community/InstallingANewHardDrive">Adding Storage</a></h2>
+<ol>
+<li><code>sudo fdisk -l</code> or <code>sudo lshw -C disk</code></li>
+<li><code>sudo fdisk /dev/sd&lt;?&gt;</code></li>
+<li>We want to add a new partition. Type &ldquo;n&rdquo; and press enter.</li>
+<li>작성중</li>
+</ol>
+<h2 id="std-io">STD I/O</h2>
+<p>#0 stdin -&gt; PROCESS -&gt; #1 stdout, #2 stderr</p>
+<p><strong>stdin</strong>: input information. Also, <code>&lt;</code> define possible</p>
+<p><strong>stdout</strong>: normal output</p>
+<p><strong>stderr</strong>: error output<!-- raw HTML omitted -->
+<code>In python, print(&quot;message&quot;, file = sys.stderr) (default: stdout)</code></p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">program 1&gt; result.txt 2&gt; error.txt
+</code></pre></div><p><strong>pipe</strong> <code>run1 | run2</code> run2 receiving run1&rsquo;s result.</p>
+<h2 id="awk">awk</h2>
+<p>awk &lsquo;{print $0}&rsquo; infile</p>
+<h2 id="sed">sed</h2>
+<p>Usage: sed [OPTION]&hellip; {script-only-if-no-other-script} [input-file]&hellip;</p>
+<p><code>-n</code>, suppress automatic printing of pattern space<!-- raw HTML omitted --></p>
+<p><code>-e script</code>, add the script to the commands to be executed<!-- raw HTML omitted --></p>
+<p><code>-f script-file</code>, add the contents of script-file to the commands to be executed<!-- raw HTML omitted --></p>
+<p><code>-i[SUFFIX]</code>, edit files in place (makes backup if SUFFIX supplied)<!-- raw HTML omitted --></p>
+<p><code>-l N</code>, specify the desired line-wrap length for the `l&rsquo; command<!-- raw HTML omitted --></p>
+<p><code>-E, -r</code>, use extended regular expressions in the script<!-- raw HTML omitted -->
+(for portability use POSIX -E).</p>
+<p><code>-d</code>, delete, i.e. 3d, 3rd row&rsquo;s deleted.</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sed -i -e <span style="color:#2aa198">&#39;s/abc/\x0/g&#39;</span> /tmp/file.txt  <span style="color:#586e75"># \x0?</span>
+sed -i <span style="color:#2aa198">&#39;/abc/d; /XYZ/d&#39;</span> /tmp/file.txt  <span style="color:#586e75"># /tmp/file.txt에서 abc와 XYZ를 찾아 삭제한다.</span>
+</code></pre></div><h2 id="wc">wc</h2>
+<p><code>default printing $rows, $words, $characters</code></p>
+<p><code>-l</code> row</p>
+<p><code>-w</code> word</p>
+<p><code>-c</code> character</p>
+<h2 id="sort">sort</h2>
+<h1 id="terminal-shortcuthttpslinuxhandbookcomlinux-shortcuts"><a href="https://linuxhandbook.com/linux-shortcuts/">Terminal Shortcut</a></h1>
+<ol>
+<li><code>Tab</code></li>
+<li><code>^C</code>: stop some progress</li>
+<li><code>^Z</code>: This shortcut will send a running program in the background.</li>
+<li><code>^D</code>: logout in ssh condition. exit in local condition.</li>
+<li><code>^L</code>: clear terminal screen</li>
+<li><code>^A</code>: This shortcut will move the cursor to the beginning of the line.</li>
+<li><code>^E</code>: This shortcut is sort of opposite to Ctrl+A.</li>
+<li><code>^U</code>: This shortcut erases everything from the current cursor position to the beginning of the line.</li>
+<li><code>^K</code>: it erases everything from the current cursor position to the end of the line.</li>
+<li><code>^W</code>: Using Ctrl+W shortcut, you can erase the word preceding to the cursor position.</li>
+<li><code>^Y</code>: This will paste the erased text that you saw with ^W, ^U and ^K shortcuts.</li>
+<li><code>^P</code>: You can use this shortcut to view the previous command.</li>
+<li><code>^N</code>: You can use this shortcut in conjugation with Ctrl+P. Ctrl+N displays the next command.</li>
+<li><code>^R</code>: search in command history</li>
+</ol>
+<h2 id="ssh">ssh</h2>
+<p><code>ssh-keygen -p -f ~/.ssh/id_rsa</code> passphrase를 변경할 수 있다.
+<code>ssh-copy-id &lt;someonePC&gt;</code>는 <code>~/.ssh/id_rsa.pub</code>가 <code>&lt;someonePC&gt;:~/.ssh/authorized_keys</code>에 추가가 된다.</p>
+<h2 id="lsof">lsof</h2>
+<h2 id="login-info">login info</h2>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#719e07">#!/bin/bash
+</span><span style="color:#719e07"></span>
+<span style="color:#586e75"># Basic info</span>
+<span style="color:#268bd2">HOSTNAME</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>uname -n<span style="color:#586e75">`</span>
+<span style="color:#268bd2">ROOT1</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>df -Ph | grep sdb1 | awk <span style="color:#2aa198">&#39;{print $4}&#39;</span> | tr -d <span style="color:#2aa198">&#39;\n&#39;</span><span style="color:#586e75">`</span>
+<span style="color:#268bd2">ROOT2</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>df -Ph | grep sda1 | awk <span style="color:#2aa198">&#39;{print $4}&#39;</span> | tr -d <span style="color:#2aa198">&#39;\n&#39;</span><span style="color:#586e75">`</span>
+<span style="color:#268bd2">DATE</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>date<span style="color:#586e75">`</span>
+
+<span style="color:#586e75"># System load</span>
+<span style="color:#268bd2">MEMORY1</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>free -t -m | grep Total | awk <span style="color:#2aa198">&#39;{print $3&#34; MB&#34;;}&#39;</span><span style="color:#586e75">`</span>
+<span style="color:#268bd2">MEMORY2</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>free -t -m | grep <span style="color:#2aa198">&#34;Mem&#34;</span> | awk <span style="color:#2aa198">&#39;{print $2&#34; MB&#34;;}&#39;</span><span style="color:#586e75">`</span>
+<span style="color:#268bd2">LOAD1</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>cat /proc/loadavg | awk <span style="color:#719e07">{</span><span style="color:#2aa198">&#39;print $1&#39;</span><span style="color:#719e07">}</span><span style="color:#586e75">`</span>
+<span style="color:#268bd2">LOAD5</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>cat /proc/loadavg | awk <span style="color:#719e07">{</span><span style="color:#2aa198">&#39;print $2&#39;</span><span style="color:#719e07">}</span><span style="color:#586e75">`</span>
+<span style="color:#268bd2">LOAD15</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>cat /proc/loadavg | awk <span style="color:#719e07">{</span><span style="color:#2aa198">&#39;print $3&#39;</span><span style="color:#719e07">}</span><span style="color:#586e75">`</span>
+
+
+<span style="color:#268bd2">logo</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#34;
+</span><span style="color:#2aa198">:::          ::::::::     ::::::::     :::::::: 
+</span><span style="color:#2aa198">:+:         :+:    :+:   :+:    :+:   :+:    :+:
+</span><span style="color:#2aa198">+:+         +:+          +:+    +:+   +:+        
+</span><span style="color:#2aa198">+#+         +#+          +#++:++#     +#+        
+</span><span style="color:#2aa198">+#+         +#+          +#+    +#+   +#+        
+</span><span style="color:#2aa198">#+#         #+#    #+#   #+#    #+#   #+#    #+# 
+</span><span style="color:#2aa198">##########   ########     #######:     ########   &#34;</span>
+<span style="color:#b58900">echo</span> -e <span style="color:#2aa198">&#34;\e[1;92m</span><span style="color:#268bd2">$logo</span><span style="color:#2aa198">\e[m&#34;</span>
+
+<span style="color:#b58900">echo</span> -e <span style="color:#2aa198">&#34;
+</span><span style="color:#2aa198">\e[1;90m# info: https://github.com/duaibeom/lcbc/tree/master/Server\e[0m&#34;</span>
+<span style="color:#b58900">echo</span> <span style="color:#2aa198">&#34;
+</span><span style="color:#2aa198">=================================================
+</span><span style="color:#2aa198"> - Hostname............: </span><span style="color:#268bd2">$HOSTNAME</span><span style="color:#2aa198">
+</span><span style="color:#2aa198"> - Disk Space..........: </span><span style="color:#268bd2">$ROOT1</span><span style="color:#2aa198"> remaining (/home)
+</span><span style="color:#2aa198">                         </span><span style="color:#268bd2">$ROOT2</span><span style="color:#2aa198"> remaining (/home2)
+</span><span style="color:#2aa198">=================================================
+</span><span style="color:#2aa198"> - CPU usage...........: </span><span style="color:#268bd2">$LOAD1</span><span style="color:#2aa198">, </span><span style="color:#268bd2">$LOAD5</span><span style="color:#2aa198">, </span><span style="color:#268bd2">$LOAD15</span><span style="color:#2aa198"> (1, 5, 15 min)
+</span><span style="color:#2aa198"> - Memory used.........: </span><span style="color:#268bd2">$MEMORY1</span><span style="color:#2aa198"> / </span><span style="color:#268bd2">$MEMORY2</span><span style="color:#2aa198">
+</span><span style="color:#2aa198"> - Swap in use.........: `free -m | tail -n 1 | awk &#39;{print </span><span style="color:#268bd2">$3</span><span style="color:#2aa198">}&#39;` MB
+</span><span style="color:#2aa198">=================================================
+</span><span style="color:#2aa198">              @ </span><span style="color:#268bd2">$DATE</span><span style="color:#2aa198">&#34;</span>
+</code></pre></div>
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'localhost';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+</body>
+</html>
