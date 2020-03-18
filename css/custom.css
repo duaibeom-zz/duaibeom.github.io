@@ -1,6 +1,6 @@
 body {
-	color: #ddd;
-	background-color: #b4b4b4;
+	color: #d7d6d3;
+	background-color: #353535;
 }
 
 ::-moz-selection {
@@ -18,7 +18,7 @@ hr {
 }
 
 blockquote {
-	border-color: #ddd;
+	border-color: #ffc;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -26,13 +26,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a,a:hover {
-	color: #ff7979;
+	color: #24ac7b;
 	text-decoration: none;
 }
 
 .site-description a,
 .site-description a:hover {
-	color: #ddd;
+	color: #ffffe0;
 	text-decoration: underline;
 }
 
