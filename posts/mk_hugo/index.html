@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Hugo 블로그 생성 w/GitHub - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Hugo 블로그 생성 w/GitHub" />
+<meta property="og:description" content="HUGO 블로그 생성  Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://duaibeom.github.io/posts/mk_hugo/" />
+<meta property="article:published_time" content="2020-03-18T11:30:39+09:00" />
+<meta property="article:modified_time" content="2020-03-18T11:30:39+09:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo 블로그 생성 w/GitHub"/>
+<meta name="twitter:description" content="HUGO 블로그 생성  Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/dark.css"  />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/custom-dark.css"  />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://duaibeom.github.io/js/main.js"></script>
+	<script src="https://duaibeom.github.io/js/abc.js"></script>
+	<script src="https://duaibeom.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="https://duaibeom.github.io/">Beom&#39;s Doodle</a></h1>
+	<div class="site-description"><h2>Chemistry | Computer | What is next?</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/duaibeom" title="Github"><i data-feather="github"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">posts</a>
+			</li>
+			
+			<li>
+				<a href="/computer">Computer</a>
+			</li>
+			
+			<li>
+				<a href="/python">Python</a>
+			</li>
+			
+			<li>
+				<a href="/ml">Machine Learning</a>
+			</li>
+			
+			<li>
+				<a href="/flutter">Flutter</a>
+			</li>
+			
+			<li>
+				<a href="/go">Go lang.</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Hugo 블로그 생성 w/GitHub</h1>
+			<div class="meta">Posted at &mdash; Mar 18, 2020</div>
+		</div>
+
+		<div class="markdown">
+			<h2 id="hugo-블로그-생성">HUGO 블로그 생성</h2>
+<blockquote>
+<p><a href="https://gohugo.io/">Hugo</a> is a fast and modern static site generator written in Go, and designed to make website creation fun again.</p>
+</blockquote>
+<h3 id="hugo-설치httpsgohugoiogetting-startedinstalling"><a href="https://gohugo.io/getting-started/installing/">Hugo 설치</a></h3>
+<ul>
+<li>MacOS - <code>brew install hugo</code></li>
+<li>Ubuntu - <code>snap install hugo</code>
+<ul>
+<li>주의 - apt로 설치하면 구버전이 설치된다. snap을 이용하면 최신 버전으로 다운이 가능하다.</li>
+</ul>
+</li>
+<li>Window - ?</li>
+</ul>
+<p>자세한 정보는 Hugo Docs의 Install Hugo 참조.</p>
+<h3 id="hugo로-블로그-생성">Hugo로 블로그 생성</h3>
+<p><code>hugo version</code> 을 통해 작동이 가능한지 확인한다.</p>
+<p><code>hugo new site blog</code> 기본 Hugo site 파일을 생성한다.</p>
+<p>GitHub를 이용해 블로그를 만들기 위해서는 두개의 repository가 필요하다.</p>
+<ul>
+<li><code>&lt;USERNAME&gt;.github.io</code> 와 <code>&lt;YOUR-PROJECT&gt;</code> repository 두개를 생성한다.</li>
+<li><code>&lt;USERNAME&gt;.github.io</code> 는 GitHub Page 기본 주소 양식이다. 이곳에 Hugo로 생성된 html 파일들이 올라 갈 것이다.</li>
+<li><code>&lt;YOUR-PROJECT&gt;</code> 는 Hugo의 기본 페이지 파일들과 작성된 파일(Post)이 올라갈 것이다.</li>
+</ul>
+<p><code>cd blog</code> 생성한 DIR로 이동한다. 지금의 예에서는 <code>&lt;YOUR-PROJECT&gt;</code>가 <code>blog</code>인 경우이다.</p>
+<p><code>git init</code> git 필수파일을 생성한다.</p>
+<p><code>git submodule add https://github.com/vividvilla/ezhil.git themes/ezhil</code> Hugo로 생성된 themes 안에 원하는 thems의 GitHub를 가져온다. 위와 같은 방법으로 하면 해당 GitHub repo가 업데이트 되면 해당 DIR로 가서 <code>git pull</code>만 하면 자신의 테마가 업데이트 된다. clone 해서 전체 다 다시 가져올 필요가 없다.</p>
+<blockquote>
+<p>Hugo의 테마들은 <a href="https://themes.gohugo.io/">여기</a>서 볼 수 있다.</p>
+</blockquote>
+<p><code>hugo new posts/my-first-post.md</code> 로 첫 post를 작성한다. 생성되는 기본 format은 <code>archetypes/default.md</code> 을 이용한다.</p>
+<p><code>hugo server -D</code> 를 이용해 생성할 사이트를 미리 볼 수 있다. <code>http://localhost:1313/</code> 가 미리보기 주소이다.</p>
+<p>만족할 결과가 나왔는가? 그렇다면 GitHub에 여러분의 Page를 올려보자. 그 전에 <code>public/</code>이 있는지 확인하고 있다면, <code>rm -rf public</code>로 지워준다.</p>
+<blockquote>
+<p>Hugo는 <code>&lt;YOUR-PROJECT&gt;</code> 안의 파일을 이용해 <code>&lt;YOUR-PROJECT&gt;/public</code> 에 html (blog page) 파일이 생성된다.</p>
+</blockquote>
+<p><code>git submodule add -b master https://github.com/&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</code> 로 작업 repo의 public을 <code>&lt;USERNAME&gt;.github.io.git</code> 과 연동한다.</p>
+<p>아래의 <code>deploy.sh</code> 을 이용해 간편하게 GitHub에 업데이트를 할 수 있다. (hugo에서 제공하는 script)</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#719e07">#!/bin/sh
+</span><span style="color:#719e07"></span>
+<span style="color:#586e75"># If a command fails then the deploy stops</span>
+<span style="color:#b58900">set</span> -e
+
+<span style="color:#b58900">printf</span> <span style="color:#2aa198">&#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&#34;</span>
+
+<span style="color:#586e75"># Build the project.</span>
+hugo <span style="color:#586e75"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
+
+<span style="color:#586e75"># Go To Public folder</span>
+<span style="color:#b58900">cd</span> public
+
+<span style="color:#586e75"># Add changes to git.</span>
+git add .
+
+<span style="color:#586e75"># Commit changes.</span>
+<span style="color:#268bd2">msg</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#34;rebuilding site </span><span style="color:#719e07">$(</span>date<span style="color:#719e07">)</span><span style="color:#2aa198">&#34;</span>
+<span style="color:#719e07">if</span> <span style="color:#719e07">[</span> -n <span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$*</span><span style="color:#2aa198">&#34;</span> <span style="color:#719e07">]</span>; <span style="color:#719e07">then</span>
+	<span style="color:#268bd2">msg</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$*</span><span style="color:#2aa198">&#34;</span>
+<span style="color:#719e07">fi</span>
+git commit -m <span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$msg</span><span style="color:#2aa198">&#34;</span>
+
+<span style="color:#586e75"># Push source and build repos.</span>
+git push origin master
+</code></pre></div><blockquote>
+<p>원하는 포스트를 작성하고 <code>deploy.sh</code> 를 실행하면 된다. 자동으로 <code>&lt;USERNAME&gt;.github.io.git</code> 에 업데이트가 된다. <code>&lt;YOUR-PROJECT&gt;</code> 는 일종의 재료 파일들이기 때문에 GitHub에 매번 <code>push</code>할 필요는 없다.</p>
+</blockquote>
+<p>jekyll에 비해 초기 설정은 다소 어려웠다. 하지만, blog contents를 작성, 관리에는 hugo가 더 편리하다.</p>
+<p>blog의 색상이나 메뉴 변경은 <code>config.toml</code>이나 <code>css</code>안의 내용을 변경하면 가능합니다.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'localhost';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+</body>
+</html>

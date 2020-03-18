@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 11:30:39 +0900</lastBuildDate>
     
 	<atom:link href="https://duaibeom.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 블로그 생성 w/GitHub</title>
+      <link>https://duaibeom.github.io/posts/mk_hugo/</link>
+      <pubDate>Wed, 18 Mar 2020 11:30:39 +0900</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/mk_hugo/</guid>
+      <description>HUGO 블로그 생성  Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.</description>
+    </item>
     
     <item>
       <title>저장용 논문</title>
