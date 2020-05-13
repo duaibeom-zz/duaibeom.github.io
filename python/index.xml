@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://duaibeom.github.io/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jupyter Notebook</title>
+      <link>https://duaibeom.github.io/python/jupyter_notebook/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/jupyter_notebook/</guid>
+      <description>Jupyter notebook Sever  via ssh via config  via config   config 파일 생성 jupyter notebook --generate-config
+  password 설정</description>
+    </item>
     
     <item>
       <title>pytesseract</title>
@@ -28,7 +38,8 @@
       
       <guid>https://duaibeom.github.io/python/matplotlib/</guid>
       <description>Matplotlib 사용법 저장 How-to
-rcParams</description>
+rcParams
+ matplotlib.pyplot의 hist나 seaborn의 kdeplot의 Density가 1을 넘어 나올 경우에는 Plot의 문제 보다는 data(numpy data?)가 plot package로 넘어갈 때 스케일 때문에 문제가 발생하는 것 같다.</description>
     </item>
     
     <item>

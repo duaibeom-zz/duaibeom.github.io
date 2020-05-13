@@ -124,30 +124,30 @@
 </blockquote>
 <p><code>git submodule add -b master https://github.com/&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</code> 로 작업 repo의 public을 <code>&lt;USERNAME&gt;.github.io.git</code> 과 연동한다.</p>
 <p>아래의 <code>deploy.sh</code> 을 이용해 간편하게 GitHub에 업데이트를 할 수 있다. (hugo에서 제공하는 script)</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#719e07">#!/bin/sh
-</span><span style="color:#719e07"></span>
-<span style="color:#586e75"># If a command fails then the deploy stops</span>
-<span style="color:#b58900">set</span> -e
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007020">#!/bin/sh
+</span><span style="color:#007020"></span>
+<span style="color:#60a0b0;font-style:italic"># If a command fails then the deploy stops</span>
+<span style="color:#007020">set</span> -e
 
-<span style="color:#b58900">printf</span> <span style="color:#2aa198">&#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&#34;</span>
+<span style="color:#007020">printf</span> <span style="color:#4070a0">&#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&#34;</span>
 
-<span style="color:#586e75"># Build the project.</span>
-hugo <span style="color:#586e75"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
+<span style="color:#60a0b0;font-style:italic"># Build the project.</span>
+hugo <span style="color:#60a0b0;font-style:italic"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
 
-<span style="color:#586e75"># Go To Public folder</span>
-<span style="color:#b58900">cd</span> public
+<span style="color:#60a0b0;font-style:italic"># Go To Public folder</span>
+<span style="color:#007020">cd</span> public
 
-<span style="color:#586e75"># Add changes to git.</span>
+<span style="color:#60a0b0;font-style:italic"># Add changes to git.</span>
 git add .
 
-<span style="color:#586e75"># Commit changes.</span>
-<span style="color:#268bd2">msg</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#34;rebuilding site </span><span style="color:#719e07">$(</span>date<span style="color:#719e07">)</span><span style="color:#2aa198">&#34;</span>
-<span style="color:#719e07">if</span> <span style="color:#719e07">[</span> -n <span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$*</span><span style="color:#2aa198">&#34;</span> <span style="color:#719e07">]</span>; <span style="color:#719e07">then</span>
-	<span style="color:#268bd2">msg</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$*</span><span style="color:#2aa198">&#34;</span>
-<span style="color:#719e07">fi</span>
-git commit -m <span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$msg</span><span style="color:#2aa198">&#34;</span>
+<span style="color:#60a0b0;font-style:italic"># Commit changes.</span>
+<span style="color:#bb60d5">msg</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;rebuilding site </span><span style="color:#007020;font-weight:bold">$(</span>date<span style="color:#007020;font-weight:bold">)</span><span style="color:#4070a0">&#34;</span>
+<span style="color:#007020;font-weight:bold">if</span> <span style="color:#666">[</span> -n <span style="color:#4070a0">&#34;</span><span style="color:#bb60d5">$*</span><span style="color:#4070a0">&#34;</span> <span style="color:#666">]</span>; <span style="color:#007020;font-weight:bold">then</span>
+	<span style="color:#bb60d5">msg</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;</span><span style="color:#bb60d5">$*</span><span style="color:#4070a0">&#34;</span>
+<span style="color:#007020;font-weight:bold">fi</span>
+git commit -m <span style="color:#4070a0">&#34;</span><span style="color:#bb60d5">$msg</span><span style="color:#4070a0">&#34;</span>
 
-<span style="color:#586e75"># Push source and build repos.</span>
+<span style="color:#60a0b0;font-style:italic"># Push source and build repos.</span>
 git push origin master
 </code></pre></div><blockquote>
 <p>원하는 포스트를 작성하고 <code>deploy.sh</code> 를 실행하면 된다. 자동으로 <code>&lt;USERNAME&gt;.github.io.git</code> 에 업데이트가 된다. <code>&lt;YOUR-PROJECT&gt;</code> 는 일종의 재료 파일들이기 때문에 GitHub에 매번 <code>push</code>할 필요는 없다.</p>

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 18 Mar 2020 11:30:39 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://duaibeom.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jupyter Notebook</title>
+      <link>https://duaibeom.github.io/python/jupyter_notebook/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/jupyter_notebook/</guid>
+      <description>Jupyter notebook Sever  via ssh via config  via config   config 파일 생성 jupyter notebook --generate-config
+  password 설정</description>
+    </item>
     
     <item>
       <title>Hugo 블로그 생성 w/GitHub</title>
@@ -88,7 +98,8 @@ CS230 - CS230: Deep Learning | Autumn 2018 Site &amp;amp; NoteVideo</description
       
       <guid>https://duaibeom.github.io/python/matplotlib/</guid>
       <description>Matplotlib 사용법 저장 How-to
-rcParams</description>
+rcParams
+ matplotlib.pyplot의 hist나 seaborn의 kdeplot의 Density가 1을 넘어 나올 경우에는 Plot의 문제 보다는 data(numpy data?)가 plot package로 넘어갈 때 스케일 때문에 문제가 발생하는 것 같다.</description>
     </item>
     
     <item>
@@ -160,7 +171,7 @@ SomeStr.endswith((&#39;multiple&#39;, &#39;suffixes&#39;))
     </item>
     
     <item>
-      <title>Linux Tip</title>
+      <title>Linux</title>
       <link>https://duaibeom.github.io/computer/linux/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       

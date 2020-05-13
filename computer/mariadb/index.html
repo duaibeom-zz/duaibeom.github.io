@@ -91,23 +91,23 @@
 <ul>
 <li>Ubuntu-18.04-LTS</li>
 </ul>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt-get install software-properties-common
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt-get install software-properties-common
 sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
-sudo add-apt-repository <span style="color:#2aa198">&#39;deb [arch=amd64,arm64,ppc64el] http://espejito.fder.edu.uy/mariadb/repo/10.4/ubuntu bionic main&#39;</span>
+sudo add-apt-repository <span style="color:#4070a0">&#39;deb [arch=amd64,arm64,ppc64el] http://espejito.fder.edu.uy/mariadb/repo/10.4/ubuntu bionic main&#39;</span>
 sudo apt update
 sudo apt install mariadb-server
 </code></pre></div><ul>
 <li>CentOS 7</li>
 </ul>
 <p><code>/etc/yum.repos.d/MariaDB.repo</code>:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#586e75"># MariaDB 10.4 CentOS repository list - created 2019-12-24 11:00 UTC</span>
-<span style="color:#586e75"># http://downloads.mariadb.org/mariadb/repositories/</span>
-<span style="color:#719e07">[</span>mariadb<span style="color:#719e07">]</span>
-<span style="color:#268bd2">name</span> <span style="color:#719e07">=</span> MariaDB
-<span style="color:#268bd2">baseurl</span> <span style="color:#719e07">=</span> http://yum.mariadb.org/10.4/centos7-amd64
-<span style="color:#268bd2">gpgkey</span><span style="color:#719e07">=</span>https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
-<span style="color:#268bd2">gpgcheck</span><span style="color:#719e07">=</span><span style="color:#2aa198">1</span>
-</code></pre></div><div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo yum install MariaDB-server MariaDB-client
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#60a0b0;font-style:italic"># MariaDB 10.4 CentOS repository list - created 2019-12-24 11:00 UTC</span>
+<span style="color:#60a0b0;font-style:italic"># http://downloads.mariadb.org/mariadb/repositories/</span>
+<span style="color:#666">[</span>mariadb<span style="color:#666">]</span>
+<span style="color:#bb60d5">name</span> <span style="color:#666">=</span> MariaDB
+<span style="color:#bb60d5">baseurl</span> <span style="color:#666">=</span> http://yum.mariadb.org/10.4/centos7-amd64
+<span style="color:#bb60d5">gpgkey</span><span style="color:#666">=</span>https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+<span style="color:#bb60d5">gpgcheck</span><span style="color:#666">=</span><span style="color:#40a070">1</span>
+</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo yum install MariaDB-server MariaDB-client
 </code></pre></div><h2 id="초기-설정-post-installation-linkhttpswwwtutorialspointcommariadbmariadb_administrationhtm">초기 설정 (Post-installation) <a href="https://www.tutorialspoint.com/mariadb/mariadb_administration.htm">link</a></h2>
 <p>CHECK: <code>mysqladmin --version</code></p>
 <p><code>mysqladmin -u root password &quot;set password&quot;</code> root 유저를 생성 후 시작이 가능하다.</p>

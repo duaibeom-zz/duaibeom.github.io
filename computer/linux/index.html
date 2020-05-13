@@ -2,15 +2,15 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Linux Tip - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Linux Tip" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Linux - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Linux" />
 <meta property="og:description" content="Linux Tip Adding Storage  sudo fdisk -l or sudo lshw -C disk sudo fdisk /dev/sd&lt;?&gt; We want to add a new partition." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://duaibeom.github.io/computer/linux/" />
 <meta property="article:published_time" content="2019-10-25T00:00:00+00:00" />
 <meta property="article:modified_time" content="2019-10-25T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linux Tip"/>
+<meta name="twitter:title" content="Linux"/>
 <meta name="twitter:description" content="Linux Tip Adding Storage  sudo fdisk -l or sudo lshw -C disk sudo fdisk /dev/sd&lt;?&gt; We want to add a new partition."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
@@ -81,7 +81,7 @@
 
 
 		<div class="post-header">
-			<h1 class="title">Linux Tip</h1>
+			<h1 class="title">Linux</h1>
 			<div class="meta">Posted at &mdash; Oct 25, 2019</div>
 		</div>
 
@@ -100,7 +100,7 @@
 <p><strong>stdout</strong>: normal output</p>
 <p><strong>stderr</strong>: error output<!-- raw HTML omitted -->
 <code>In python, print(&quot;message&quot;, file = sys.stderr) (default: stdout)</code></p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">program 1&gt; result.txt 2&gt; error.txt
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">program 1&gt; result.txt 2&gt; error.txt
 </code></pre></div><p><strong>pipe</strong> <code>run1 | run2</code> run2 receiving run1&rsquo;s result.</p>
 <h2 id="awk">awk</h2>
 <p>awk &lsquo;{print $0}&rsquo; infile</p>
@@ -114,8 +114,8 @@
 <p><code>-E, -r</code>, use extended regular expressions in the script<!-- raw HTML omitted -->
 (for portability use POSIX -E).</p>
 <p><code>-d</code>, delete, i.e. 3d, 3rd row&rsquo;s deleted.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sed -i -e <span style="color:#2aa198">&#39;s/abc/\x0/g&#39;</span> /tmp/file.txt  <span style="color:#586e75"># \x0?</span>
-sed -i <span style="color:#2aa198">&#39;/abc/d; /XYZ/d&#39;</span> /tmp/file.txt  <span style="color:#586e75"># /tmp/file.txt에서 abc와 XYZ를 찾아 삭제한다.</span>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sed -i -e <span style="color:#4070a0">&#39;s/abc/\x0/g&#39;</span> /tmp/file.txt  <span style="color:#60a0b0;font-style:italic"># \x0?</span>
+sed -i <span style="color:#4070a0">&#39;/abc/d; /XYZ/d&#39;</span> /tmp/file.txt  <span style="color:#60a0b0;font-style:italic"># /tmp/file.txt에서 abc와 XYZ를 찾아 삭제한다.</span>
 </code></pre></div><h2 id="wc">wc</h2>
 <p><code>default printing $rows, $words, $characters</code></p>
 <p><code>-l</code> row</p>
@@ -144,46 +144,53 @@ sed -i <span style="color:#2aa198">&#39;/abc/d; /XYZ/d&#39;</span> /tmp/file.txt
 <code>ssh-copy-id &lt;someonePC&gt;</code>는 <code>~/.ssh/id_rsa.pub</code>가 <code>&lt;someonePC&gt;:~/.ssh/authorized_keys</code>에 추가가 된다.</p>
 <h2 id="lsof">lsof</h2>
 <h2 id="login-info">login info</h2>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#719e07">#!/bin/bash
-</span><span style="color:#719e07"></span>
-<span style="color:#586e75"># Basic info</span>
-<span style="color:#268bd2">HOSTNAME</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>uname -n<span style="color:#586e75">`</span>
-<span style="color:#268bd2">ROOT1</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>df -Ph | grep sdb1 | awk <span style="color:#2aa198">&#39;{print $4}&#39;</span> | tr -d <span style="color:#2aa198">&#39;\n&#39;</span><span style="color:#586e75">`</span>
-<span style="color:#268bd2">ROOT2</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>df -Ph | grep sda1 | awk <span style="color:#2aa198">&#39;{print $4}&#39;</span> | tr -d <span style="color:#2aa198">&#39;\n&#39;</span><span style="color:#586e75">`</span>
-<span style="color:#268bd2">DATE</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>date<span style="color:#586e75">`</span>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007020">#!/bin/bash
+</span><span style="color:#007020"></span>
+<span style="color:#60a0b0;font-style:italic"># Basic info</span>
+<span style="color:#bb60d5">HOSTNAME</span><span style="color:#666">=</span><span style="color:#4070a0">`</span>uname -n<span style="color:#4070a0">`</span>
+<span style="color:#bb60d5">ROOT1</span><span style="color:#666">=</span><span style="color:#4070a0">`</span>df -Ph | grep sdb1 | awk <span style="color:#4070a0">&#39;{print $4}&#39;</span> | tr -d <span style="color:#4070a0">&#39;\n&#39;</span><span style="color:#4070a0">`</span>
+<span style="color:#bb60d5">ROOT2</span><span style="color:#666">=</span><span style="color:#4070a0">`</span>df -Ph | grep sda1 | awk <span style="color:#4070a0">&#39;{print $4}&#39;</span> | tr -d <span style="color:#4070a0">&#39;\n&#39;</span><span style="color:#4070a0">`</span>
+<span style="color:#bb60d5">DATE</span><span style="color:#666">=</span><span style="color:#4070a0">`</span>date<span style="color:#4070a0">`</span>
 
-<span style="color:#586e75"># System load</span>
-<span style="color:#268bd2">MEMORY1</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>free -t -m | grep Total | awk <span style="color:#2aa198">&#39;{print $3&#34; MB&#34;;}&#39;</span><span style="color:#586e75">`</span>
-<span style="color:#268bd2">MEMORY2</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>free -t -m | grep <span style="color:#2aa198">&#34;Mem&#34;</span> | awk <span style="color:#2aa198">&#39;{print $2&#34; MB&#34;;}&#39;</span><span style="color:#586e75">`</span>
-<span style="color:#268bd2">LOAD1</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>cat /proc/loadavg | awk <span style="color:#719e07">{</span><span style="color:#2aa198">&#39;print $1&#39;</span><span style="color:#719e07">}</span><span style="color:#586e75">`</span>
-<span style="color:#268bd2">LOAD5</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>cat /proc/loadavg | awk <span style="color:#719e07">{</span><span style="color:#2aa198">&#39;print $2&#39;</span><span style="color:#719e07">}</span><span style="color:#586e75">`</span>
-<span style="color:#268bd2">LOAD15</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>cat /proc/loadavg | awk <span style="color:#719e07">{</span><span style="color:#2aa198">&#39;print $3&#39;</span><span style="color:#719e07">}</span><span style="color:#586e75">`</span>
+<span style="color:#60a0b0;font-style:italic"># System load</span>
+<span style="color:#bb60d5">MEMORY1</span><span style="color:#666">=</span><span style="color:#4070a0">`</span>free -t -m | grep Total | awk <span style="color:#4070a0">&#39;{print $3&#34; MB&#34;;}&#39;</span><span style="color:#4070a0">`</span>
+<span style="color:#bb60d5">MEMORY2</span><span style="color:#666">=</span><span style="color:#4070a0">`</span>free -t -m | grep <span style="color:#4070a0">&#34;Mem&#34;</span> | awk <span style="color:#4070a0">&#39;{print $2&#34; MB&#34;;}&#39;</span><span style="color:#4070a0">`</span>
+<span style="color:#bb60d5">LOAD1</span><span style="color:#666">=</span><span style="color:#4070a0">`</span>cat /proc/loadavg | awk <span style="color:#666">{</span><span style="color:#4070a0">&#39;print $1&#39;</span><span style="color:#666">}</span><span style="color:#4070a0">`</span>
+<span style="color:#bb60d5">LOAD5</span><span style="color:#666">=</span><span style="color:#4070a0">`</span>cat /proc/loadavg | awk <span style="color:#666">{</span><span style="color:#4070a0">&#39;print $2&#39;</span><span style="color:#666">}</span><span style="color:#4070a0">`</span>
+<span style="color:#bb60d5">LOAD15</span><span style="color:#666">=</span><span style="color:#4070a0">`</span>cat /proc/loadavg | awk <span style="color:#666">{</span><span style="color:#4070a0">&#39;print $3&#39;</span><span style="color:#666">}</span><span style="color:#4070a0">`</span>
 
 
-<span style="color:#268bd2">logo</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#34;
-</span><span style="color:#2aa198">:::          ::::::::     ::::::::     :::::::: 
-</span><span style="color:#2aa198">:+:         :+:    :+:   :+:    :+:   :+:    :+:
-</span><span style="color:#2aa198">+:+         +:+          +:+    +:+   +:+        
-</span><span style="color:#2aa198">+#+         +#+          +#++:++#     +#+        
-</span><span style="color:#2aa198">+#+         +#+          +#+    +#+   +#+        
-</span><span style="color:#2aa198">#+#         #+#    #+#   #+#    #+#   #+#    #+# 
-</span><span style="color:#2aa198">##########   ########     #######:     ########   &#34;</span>
-<span style="color:#b58900">echo</span> -e <span style="color:#2aa198">&#34;\e[1;92m</span><span style="color:#268bd2">$logo</span><span style="color:#2aa198">\e[m&#34;</span>
+<span style="color:#bb60d5">logo</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;
+</span><span style="color:#4070a0">:::          ::::::::     ::::::::     :::::::: 
+</span><span style="color:#4070a0">:+:         :+:    :+:   :+:    :+:   :+:    :+:
+</span><span style="color:#4070a0">+:+         +:+          +:+    +:+   +:+        
+</span><span style="color:#4070a0">+#+         +#+          +#++:++#     +#+        
+</span><span style="color:#4070a0">+#+         +#+          +#+    +#+   +#+        
+</span><span style="color:#4070a0">#+#         #+#    #+#   #+#    #+#   #+#    #+# 
+</span><span style="color:#4070a0">##########   ########     #######:     ########   &#34;</span>
+<span style="color:#007020">echo</span> -e <span style="color:#4070a0">&#34;\e[1;92m</span><span style="color:#bb60d5">$logo</span><span style="color:#4070a0">\e[m&#34;</span>
 
-<span style="color:#b58900">echo</span> -e <span style="color:#2aa198">&#34;
-</span><span style="color:#2aa198">\e[1;90m# info: https://github.com/duaibeom/lcbc/tree/master/Server\e[0m&#34;</span>
-<span style="color:#b58900">echo</span> <span style="color:#2aa198">&#34;
-</span><span style="color:#2aa198">=================================================
-</span><span style="color:#2aa198"> - Hostname............: </span><span style="color:#268bd2">$HOSTNAME</span><span style="color:#2aa198">
-</span><span style="color:#2aa198"> - Disk Space..........: </span><span style="color:#268bd2">$ROOT1</span><span style="color:#2aa198"> remaining (/home)
-</span><span style="color:#2aa198">                         </span><span style="color:#268bd2">$ROOT2</span><span style="color:#2aa198"> remaining (/home2)
-</span><span style="color:#2aa198">=================================================
-</span><span style="color:#2aa198"> - CPU usage...........: </span><span style="color:#268bd2">$LOAD1</span><span style="color:#2aa198">, </span><span style="color:#268bd2">$LOAD5</span><span style="color:#2aa198">, </span><span style="color:#268bd2">$LOAD15</span><span style="color:#2aa198"> (1, 5, 15 min)
-</span><span style="color:#2aa198"> - Memory used.........: </span><span style="color:#268bd2">$MEMORY1</span><span style="color:#2aa198"> / </span><span style="color:#268bd2">$MEMORY2</span><span style="color:#2aa198">
-</span><span style="color:#2aa198"> - Swap in use.........: `free -m | tail -n 1 | awk &#39;{print </span><span style="color:#268bd2">$3</span><span style="color:#2aa198">}&#39;` MB
-</span><span style="color:#2aa198">=================================================
-</span><span style="color:#2aa198">              @ </span><span style="color:#268bd2">$DATE</span><span style="color:#2aa198">&#34;</span>
-</code></pre></div>
+<span style="color:#007020">echo</span> -e <span style="color:#4070a0">&#34;
+</span><span style="color:#4070a0">\e[1;90m# info: ~ \e[0m&#34;</span>
+<span style="color:#007020">echo</span> <span style="color:#4070a0">&#34;
+</span><span style="color:#4070a0">=================================================
+</span><span style="color:#4070a0"> - Hostname............: </span><span style="color:#bb60d5">$HOSTNAME</span><span style="color:#4070a0">
+</span><span style="color:#4070a0"> - Disk Space..........: </span><span style="color:#bb60d5">$ROOT1</span><span style="color:#4070a0"> remaining (/home)
+</span><span style="color:#4070a0">                         </span><span style="color:#bb60d5">$ROOT2</span><span style="color:#4070a0"> remaining (/home2)
+</span><span style="color:#4070a0">=================================================
+</span><span style="color:#4070a0"> - CPU usage...........: </span><span style="color:#bb60d5">$LOAD1</span><span style="color:#4070a0">, </span><span style="color:#bb60d5">$LOAD5</span><span style="color:#4070a0">, </span><span style="color:#bb60d5">$LOAD15</span><span style="color:#4070a0"> (1, 5, 15 min)
+</span><span style="color:#4070a0"> - Memory used.........: </span><span style="color:#bb60d5">$MEMORY1</span><span style="color:#4070a0"> / </span><span style="color:#bb60d5">$MEMORY2</span><span style="color:#4070a0">
+</span><span style="color:#4070a0"> - Swap in use.........: `free -m | tail -n 1 | awk &#39;{print </span><span style="color:#bb60d5">$3</span><span style="color:#4070a0">}&#39;` MB
+</span><span style="color:#4070a0">=================================================
+</span><span style="color:#4070a0">              @ </span><span style="color:#bb60d5">$DATE</span><span style="color:#4070a0">&#34;</span>
+</code></pre></div><h2 id="systemctl">systemctl</h2>
+<p><code>systemctl get-default</code></p>
+<p><code>systemctl set-default [multi-user.target (runlevel 3)|graphical.target (runlevel 5)]</code></p>
+<h2 id="ldd">ldd</h2>
+<p><code>ldd -v /path/to/program/executable</code></p>
+<h2 id="heading"></h2>
+<p>to show you the shared libraries required by any given program</p>
+
 		</div>
 
 		<div class="post-tags">

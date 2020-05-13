@@ -114,7 +114,7 @@ Extract number from a string</p>
 <ol>
 <li>가상환경 설치법</li>
 </ol>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo apt update
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo apt update
 sudo apt install python3.&lt;version&gt; python3.&lt;version&gt;-venv
 </code></pre></div><ol start="2">
 <li>가상환경 생성
@@ -137,40 +137,40 @@ sudo apt install python3.&lt;version&gt; python3.&lt;version&gt;-venv
 가상환경을 벋어나고자 한다면 <code>deactivate</code>를 command 창에 치면 나갈 수 있다.</li>
 </ol>
 <h3 id="color--bold-texthttpsstackoverflowcoma1730342810103236"><a href="https://stackoverflow.com/a/17303428/10103236">Color &amp; Bold text</a></h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#719e07">class</span> <span style="color:#268bd2">Color</span>:
-    PURPLE <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\033</span><span style="color:#2aa198">[95m&#39;</span>
-    CYAN <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\033</span><span style="color:#2aa198">[96m&#39;</span>
-    DARKCYAN <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\033</span><span style="color:#2aa198">[36m&#39;</span>
-    BLUE <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\033</span><span style="color:#2aa198">[94m&#39;</span>
-    GREEN <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\033</span><span style="color:#2aa198">[92m&#39;</span>
-    YELLOW <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\033</span><span style="color:#2aa198">[93m&#39;</span>
-    RED <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\033</span><span style="color:#2aa198">[91m&#39;</span>
-    BOLD <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\033</span><span style="color:#2aa198">[1m&#39;</span>
-    UNDERLINE <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\033</span><span style="color:#2aa198">[4m&#39;</span>
-    END <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\033</span><span style="color:#2aa198">[0m&#39;</span>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">class</span> <span style="color:#0e84b5;font-weight:bold">Color</span>:
+    PURPLE <span style="color:#666">=</span> <span style="color:#4070a0">&#39;</span><span style="color:#4070a0;font-weight:bold">\033</span><span style="color:#4070a0">[95m&#39;</span>
+    CYAN <span style="color:#666">=</span> <span style="color:#4070a0">&#39;</span><span style="color:#4070a0;font-weight:bold">\033</span><span style="color:#4070a0">[96m&#39;</span>
+    DARKCYAN <span style="color:#666">=</span> <span style="color:#4070a0">&#39;</span><span style="color:#4070a0;font-weight:bold">\033</span><span style="color:#4070a0">[36m&#39;</span>
+    BLUE <span style="color:#666">=</span> <span style="color:#4070a0">&#39;</span><span style="color:#4070a0;font-weight:bold">\033</span><span style="color:#4070a0">[94m&#39;</span>
+    GREEN <span style="color:#666">=</span> <span style="color:#4070a0">&#39;</span><span style="color:#4070a0;font-weight:bold">\033</span><span style="color:#4070a0">[92m&#39;</span>
+    YELLOW <span style="color:#666">=</span> <span style="color:#4070a0">&#39;</span><span style="color:#4070a0;font-weight:bold">\033</span><span style="color:#4070a0">[93m&#39;</span>
+    RED <span style="color:#666">=</span> <span style="color:#4070a0">&#39;</span><span style="color:#4070a0;font-weight:bold">\033</span><span style="color:#4070a0">[91m&#39;</span>
+    BOLD <span style="color:#666">=</span> <span style="color:#4070a0">&#39;</span><span style="color:#4070a0;font-weight:bold">\033</span><span style="color:#4070a0">[1m&#39;</span>
+    UNDERLINE <span style="color:#666">=</span> <span style="color:#4070a0">&#39;</span><span style="color:#4070a0;font-weight:bold">\033</span><span style="color:#4070a0">[4m&#39;</span>
+    END <span style="color:#666">=</span> <span style="color:#4070a0">&#39;</span><span style="color:#4070a0;font-weight:bold">\033</span><span style="color:#4070a0">[0m&#39;</span>
 
-<span style="color:#719e07">print</span>(f<span style="color:#2aa198">&#39;{Color.BOLD}Hello World !{Color.END}&#39;</span>)
+<span style="color:#007020;font-weight:bold">print</span>(f<span style="color:#4070a0">&#39;{Color.BOLD}Hello World !{Color.END}&#39;</span>)
 </code></pre></div><h3 id="split-strings-into-words-with-multiple-word-boundary-delimitershttpsstackoverflowcoma105959610103236"><a href="https://stackoverflow.com/a/1059596/10103236">Split Strings into words with multiple word boundary delimiters</a></h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#719e07">&gt;&gt;&gt;</span> <span style="color:#719e07">import</span> re
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">re</span>
 
-<span style="color:#719e07">&gt;&gt;&gt;</span> re<span style="color:#719e07">.</span>split(<span style="color:#2aa198">&#39;\W+&#39;</span>, <span style="color:#2aa198">&#39;Words, words, words.&#39;</span>)
-[<span style="color:#2aa198">&#39;Words&#39;</span>, <span style="color:#2aa198">&#39;words&#39;</span>, <span style="color:#2aa198">&#39;words&#39;</span>, <span style="color:#2aa198">&#39;&#39;</span>]
+<span style="color:#666">&gt;&gt;&gt;</span> re<span style="color:#666">.</span>split(<span style="color:#4070a0">&#39;\W+&#39;</span>, <span style="color:#4070a0">&#39;Words, words, words.&#39;</span>)
+[<span style="color:#4070a0">&#39;Words&#39;</span>, <span style="color:#4070a0">&#39;words&#39;</span>, <span style="color:#4070a0">&#39;words&#39;</span>, <span style="color:#4070a0">&#39;&#39;</span>]
 
-<span style="color:#719e07">&gt;&gt;&gt;</span> re<span style="color:#719e07">.</span>split(<span style="color:#2aa198">&#39;(\W+)&#39;</span>, <span style="color:#2aa198">&#39;Words, words, words.&#39;</span>)
-[<span style="color:#2aa198">&#39;Words&#39;</span>, <span style="color:#2aa198">&#39;, &#39;</span>, <span style="color:#2aa198">&#39;words&#39;</span>, <span style="color:#2aa198">&#39;, &#39;</span>, <span style="color:#2aa198">&#39;words&#39;</span>, <span style="color:#2aa198">&#39;.&#39;</span>, <span style="color:#2aa198">&#39;&#39;</span>]
+<span style="color:#666">&gt;&gt;&gt;</span> re<span style="color:#666">.</span>split(<span style="color:#4070a0">&#39;(\W+)&#39;</span>, <span style="color:#4070a0">&#39;Words, words, words.&#39;</span>)
+[<span style="color:#4070a0">&#39;Words&#39;</span>, <span style="color:#4070a0">&#39;, &#39;</span>, <span style="color:#4070a0">&#39;words&#39;</span>, <span style="color:#4070a0">&#39;, &#39;</span>, <span style="color:#4070a0">&#39;words&#39;</span>, <span style="color:#4070a0">&#39;.&#39;</span>, <span style="color:#4070a0">&#39;&#39;</span>]
 
-<span style="color:#719e07">&gt;&gt;&gt;</span> re<span style="color:#719e07">.</span>split(<span style="color:#2aa198">&#39;\W+&#39;</span>, <span style="color:#2aa198">&#39;Words, words, words.&#39;</span>, <span style="color:#2aa198">1</span>)
-[<span style="color:#2aa198">&#39;Words&#39;</span>, <span style="color:#2aa198">&#39;words, words.&#39;</span>]
+<span style="color:#666">&gt;&gt;&gt;</span> re<span style="color:#666">.</span>split(<span style="color:#4070a0">&#39;\W+&#39;</span>, <span style="color:#4070a0">&#39;Words, words, words.&#39;</span>, <span style="color:#40a070">1</span>)
+[<span style="color:#4070a0">&#39;Words&#39;</span>, <span style="color:#4070a0">&#39;words, words.&#39;</span>]
 
-<span style="color:#586e75"># Will be splitting on: , &lt;space&gt; - ! ? :</span>
-<span style="color:#719e07">&gt;&gt;&gt;</span> <span style="color:#b58900">filter</span>(<span style="color:#268bd2">None</span>, re<span style="color:#719e07">.</span>split(<span style="color:#2aa198">&#34;[, \-!?:]+&#34;</span>, <span style="color:#2aa198">&#34;Hey, you - what are you doing here!?&#34;</span>))
-[<span style="color:#2aa198">&#39;Hey&#39;</span>, <span style="color:#2aa198">&#39;you&#39;</span>, <span style="color:#2aa198">&#39;what&#39;</span>, <span style="color:#2aa198">&#39;are&#39;</span>, <span style="color:#2aa198">&#39;you&#39;</span>, <span style="color:#2aa198">&#39;doing&#39;</span>, <span style="color:#2aa198">&#39;here&#39;</span>]
+<span style="color:#60a0b0;font-style:italic"># Will be splitting on: , &lt;space&gt; - ! ? :</span>
+<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#007020">filter</span>(None, re<span style="color:#666">.</span>split(<span style="color:#4070a0">&#34;[, \-!?:]+&#34;</span>, <span style="color:#4070a0">&#34;Hey, you - what are you doing here!?&#34;</span>))
+[<span style="color:#4070a0">&#39;Hey&#39;</span>, <span style="color:#4070a0">&#39;you&#39;</span>, <span style="color:#4070a0">&#39;what&#39;</span>, <span style="color:#4070a0">&#39;are&#39;</span>, <span style="color:#4070a0">&#39;you&#39;</span>, <span style="color:#4070a0">&#39;doing&#39;</span>, <span style="color:#4070a0">&#39;here&#39;</span>]
 </code></pre></div><h3 id="argparsehttpsdocspythonorgko38howtoargparsehtmlid1"><a href="https://docs.python.org/ko/3.8/howto/argparse.html#id1">Argparse</a></h3>
 <p>기본적인 사용법:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#719e07">import</span> argparse
-parser <span style="color:#719e07">=</span> argparse<span style="color:#719e07">.</span>ArgumentParser()
-parser<span style="color:#719e07">.</span>add_argument(<span style="color:#2aa198">&#39;--foo&#39;</span>, help<span style="color:#719e07">=</span><span style="color:#2aa198">&#39;foo help&#39;</span>)
-args <span style="color:#719e07">=</span> parser<span style="color:#719e07">.</span>parse_args()
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">argparse</span>
+parser <span style="color:#666">=</span> argparse<span style="color:#666">.</span>ArgumentParser()
+parser<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">&#39;--foo&#39;</span>, help<span style="color:#666">=</span><span style="color:#4070a0">&#39;foo help&#39;</span>)
+args <span style="color:#666">=</span> parser<span style="color:#666">.</span>parse_args()
 </code></pre></div><blockquote>
 <p>ArgumentParser.<strong>add_argument</strong>(name or flags&hellip;[, action][, nargs][, const][, default][, type][, choices][, required][, help][, metavar][, dest])<!-- raw HTML omitted -->
 <code>name or flags</code> - 옵션 문자열의 이름이나 리스트, 예를 들어 foo 또는 -f, &ndash;foo.<!-- raw HTML omitted -->
@@ -185,72 +185,72 @@ args <span style="color:#719e07">=</span> parser<span style="color:#719e07">.</s
 <code>metavar</code> - 사용 메시지에 사용되는 인자의 이름.<!-- raw HTML omitted -->
 <code>dest</code> - parse_args() 가 반환하는 객체에 추가될 어트리뷰트의 이름.<!-- raw HTML omitted --></p>
 </blockquote>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">parser <span style="color:#719e07">=</span> argparse<span style="color:#719e07">.</span>ArgumentParser(description<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;calculate X to the power of Y&#34;</span>)
-group <span style="color:#719e07">=</span> parser<span style="color:#719e07">.</span>add_mutually_exclusive_group()
-group<span style="color:#719e07">.</span>add_argument(<span style="color:#2aa198">&#34;-v&#34;</span>, <span style="color:#2aa198">&#34;--verbose&#34;</span>, action<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;store_true&#34;</span>)
-group<span style="color:#719e07">.</span>add_argument(<span style="color:#2aa198">&#34;-q&#34;</span>, <span style="color:#2aa198">&#34;--quiet&#34;</span>, action<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;store_true&#34;</span>)
-parser<span style="color:#719e07">.</span>add_argument(<span style="color:#2aa198">&#34;x&#34;</span>, <span style="color:#b58900">type</span><span style="color:#719e07">=</span><span style="color:#b58900">int</span>, help<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;the base&#34;</span>)
-parser<span style="color:#719e07">.</span>add_argument(<span style="color:#2aa198">&#34;y&#34;</span>, <span style="color:#b58900">type</span><span style="color:#719e07">=</span><span style="color:#b58900">int</span>, help<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;the exponent&#34;</span>)
-args <span style="color:#719e07">=</span> parser<span style="color:#719e07">.</span>parse_args()
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">parser <span style="color:#666">=</span> argparse<span style="color:#666">.</span>ArgumentParser(description<span style="color:#666">=</span><span style="color:#4070a0">&#34;calculate X to the power of Y&#34;</span>)
+group <span style="color:#666">=</span> parser<span style="color:#666">.</span>add_mutually_exclusive_group()
+group<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">&#34;-v&#34;</span>, <span style="color:#4070a0">&#34;--verbose&#34;</span>, action<span style="color:#666">=</span><span style="color:#4070a0">&#34;store_true&#34;</span>)
+group<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">&#34;-q&#34;</span>, <span style="color:#4070a0">&#34;--quiet&#34;</span>, action<span style="color:#666">=</span><span style="color:#4070a0">&#34;store_true&#34;</span>)
+parser<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">&#34;x&#34;</span>, <span style="color:#007020">type</span><span style="color:#666">=</span><span style="color:#007020">int</span>, help<span style="color:#666">=</span><span style="color:#4070a0">&#34;the base&#34;</span>)
+parser<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">&#34;y&#34;</span>, <span style="color:#007020">type</span><span style="color:#666">=</span><span style="color:#007020">int</span>, help<span style="color:#666">=</span><span style="color:#4070a0">&#34;the exponent&#34;</span>)
+args <span style="color:#666">=</span> parser<span style="color:#666">.</span>parse_args()
 </code></pre></div><p>충돌하는 옵션은 그룹으로 묶어 사용한다.</p>
 <h2 id="list">List</h2>
 <p><code>a = [1,1,2,2,1,1]</code>
 <code>a.count(1)</code> &raquo;&gt; <code>4</code></p>
 <h2 id="numpy">NUMPY</h2>
 <h3 id="np-자리수-조절">np 자리수 조절</h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#719e07">print</span>(U)
-<span style="color:#719e07">&gt;</span> [ <span style="color:#2aa198">3.40948761e-01</span>  <span style="color:#2aa198">0.00000000e+00</span> <span style="color:#719e07">-</span><span style="color:#2aa198">1.20516241e-01</span> <span style="color:#719e07">-</span><span style="color:#2aa198">3.88578059e-16</span> <span style="color:#719e07">-</span><span style="color:#2aa198">9.32324946e-01</span> <span style="color:#719e07">-</span><span style="color:#2aa198">1.11022302e-16</span> <span style="color:#719e07">-</span><span style="color:#2aa198">2.42574685e-17</span>]
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">print</span>(U)
+<span style="color:#666">&gt;</span> [ <span style="color:#40a070">3.40948761e-01</span>  <span style="color:#40a070">0.00000000e+00</span> <span style="color:#666">-</span><span style="color:#40a070">1.20516241e-01</span> <span style="color:#666">-</span><span style="color:#40a070">3.88578059e-16</span> <span style="color:#666">-</span><span style="color:#40a070">9.32324946e-01</span> <span style="color:#666">-</span><span style="color:#40a070">1.11022302e-16</span> <span style="color:#666">-</span><span style="color:#40a070">2.42574685e-17</span>]
 
 
-np<span style="color:#719e07">.</span>set_printoptions(precision<span style="color:#719e07">=</span><span style="color:#2aa198">2</span>) <span style="color:#586e75"># global</span>
+np<span style="color:#666">.</span>set_printoptions(precision<span style="color:#666">=</span><span style="color:#40a070">2</span>) <span style="color:#60a0b0;font-style:italic"># global</span>
 
-<span style="color:#719e07">with</span> np<span style="color:#719e07">.</span>printoptions(precision<span style="color:#719e07">=</span><span style="color:#2aa198">2</span>, suppress<span style="color:#719e07">=</span><span style="color:#268bd2">True</span>): <span style="color:#586e75"># local</span>
-    <span style="color:#719e07">print</span>(U)
-<span style="color:#719e07">&gt;</span> [ <span style="color:#2aa198">0.34</span>  <span style="color:#2aa198">0.</span>   <span style="color:#719e07">-</span><span style="color:#2aa198">0.12</span> <span style="color:#719e07">-</span><span style="color:#2aa198">0.</span>   <span style="color:#719e07">-</span><span style="color:#2aa198">0.93</span> <span style="color:#719e07">-</span><span style="color:#2aa198">0.</span>   <span style="color:#719e07">-</span><span style="color:#2aa198">0.</span>  ]
+<span style="color:#007020;font-weight:bold">with</span> np<span style="color:#666">.</span>printoptions(precision<span style="color:#666">=</span><span style="color:#40a070">2</span>, suppress<span style="color:#666">=</span>True): <span style="color:#60a0b0;font-style:italic"># local</span>
+    <span style="color:#007020;font-weight:bold">print</span>(U)
+<span style="color:#666">&gt;</span> [ <span style="color:#40a070">0.34</span>  <span style="color:#40a070">0.</span>   <span style="color:#666">-</span><span style="color:#40a070">0.12</span> <span style="color:#666">-</span><span style="color:#40a070">0.</span>   <span style="color:#666">-</span><span style="color:#40a070">0.93</span> <span style="color:#666">-</span><span style="color:#40a070">0.</span>   <span style="color:#666">-</span><span style="color:#40a070">0.</span>  ]
 
-<span style="color:#2aa198">&#39;suppress&#39;</span> about scientific notation
-<span style="color:#719e07">&gt;</span> If <span style="color:#268bd2">True</span>, always <span style="color:#719e07">print</span> floating point numbers using fixed point notation
+<span style="color:#4070a0">&#39;suppress&#39;</span> about scientific notation
+<span style="color:#666">&gt;</span> If True, always <span style="color:#007020;font-weight:bold">print</span> floating point numbers using fixed point notation
 
-U[U <span style="color:#719e07">&lt;</span> <span style="color:#2aa198">0</span>] <span style="color:#719e07">=</span> <span style="color:#2aa198">0</span>
-<span style="color:#719e07">&gt;</span> [<span style="color:#2aa198">0.34</span> <span style="color:#2aa198">0.</span>   <span style="color:#2aa198">0.</span>   <span style="color:#2aa198">0.</span>   <span style="color:#2aa198">0.</span>   <span style="color:#2aa198">0.</span>   <span style="color:#2aa198">0.</span>  ]
+U[U <span style="color:#666">&lt;</span> <span style="color:#40a070">0</span>] <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+<span style="color:#666">&gt;</span> [<span style="color:#40a070">0.34</span> <span style="color:#40a070">0.</span>   <span style="color:#40a070">0.</span>   <span style="color:#40a070">0.</span>   <span style="color:#40a070">0.</span>   <span style="color:#40a070">0.</span>   <span style="color:#40a070">0.</span>  ]
 </code></pre></div><h2 id="file-total-line-number-check">FILE total line number check</h2>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">q <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;wc smiles_100000.txt&#39;</span>
-<span style="color:#719e07">with</span> Popen(q<span style="color:#719e07">.</span>split(), stdout<span style="color:#719e07">=</span>PIPE, universal_newlines<span style="color:#719e07">=</span><span style="color:#268bd2">True</span>) <span style="color:#719e07">as</span> process: <span style="color:#586e75"># 0.043254s</span>
-    <span style="color:#719e07">for</span> i <span style="color:#719e07">in</span> process<span style="color:#719e07">.</span>stdout:
-        line1 <span style="color:#719e07">=</span> <span style="color:#b58900">int</span>(i<span style="color:#719e07">.</span>split()[<span style="color:#2aa198">0</span>])
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">q <span style="color:#666">=</span> <span style="color:#4070a0">&#39;wc smiles_100000.txt&#39;</span>
+<span style="color:#007020;font-weight:bold">with</span> Popen(q<span style="color:#666">.</span>split(), stdout<span style="color:#666">=</span>PIPE, universal_newlines<span style="color:#666">=</span>True) <span style="color:#007020;font-weight:bold">as</span> process: <span style="color:#60a0b0;font-style:italic"># 0.043254s</span>
+    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> process<span style="color:#666">.</span>stdout:
+        line1 <span style="color:#666">=</span> <span style="color:#007020">int</span>(i<span style="color:#666">.</span>split()[<span style="color:#40a070">0</span>])
 
-w <span style="color:#719e07">=</span> <span style="color:#2aa198">0</span>
-<span style="color:#719e07">with</span> <span style="color:#b58900">open</span>(<span style="color:#2aa198">&#39;smiles_100000.txt&#39;</span>) <span style="color:#719e07">as</span> f: <span style="color:#586e75"># 0.019221s</span>
-    <span style="color:#719e07">for</span> i <span style="color:#719e07">in</span> f:
-        w <span style="color:#719e07">+=</span> <span style="color:#2aa198">1</span>
+w <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+<span style="color:#007020;font-weight:bold">with</span> <span style="color:#007020">open</span>(<span style="color:#4070a0">&#39;smiles_100000.txt&#39;</span>) <span style="color:#007020;font-weight:bold">as</span> f: <span style="color:#60a0b0;font-style:italic"># 0.019221s</span>
+    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> f:
+        w <span style="color:#666">+=</span> <span style="color:#40a070">1</span>
 
-<span style="color:#719e07">with</span> <span style="color:#b58900">open</span>(<span style="color:#2aa198">&#39;smiles_100000.txt&#39;</span>) <span style="color:#719e07">as</span> f: <span style="color:#586e75"># 0.011087s</span>
-    <span style="color:#719e07">for</span> e, _ <span style="color:#719e07">in</span> <span style="color:#b58900">enumerate</span>(f):
-        <span style="color:#719e07">pass</span>
+<span style="color:#007020;font-weight:bold">with</span> <span style="color:#007020">open</span>(<span style="color:#4070a0">&#39;smiles_100000.txt&#39;</span>) <span style="color:#007020;font-weight:bold">as</span> f: <span style="color:#60a0b0;font-style:italic"># 0.011087s</span>
+    <span style="color:#007020;font-weight:bold">for</span> e, _ <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">enumerate</span>(f):
+        <span style="color:#007020;font-weight:bold">pass</span>
 
-Conclusion : <span style="color:#b58900">enumerate</span> best<span style="color:#719e07">.</span>
+Conclusion : <span style="color:#007020">enumerate</span> best<span style="color:#666">.</span>
 </code></pre></div><h2 id="matplotlib">Matplotlib</h2>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">fig, axes <span style="color:#719e07">=</span> plt<span style="color:#719e07">.</span>subplots(<span style="color:#2aa198">14</span>, <span style="color:#2aa198">1</span>, figsize<span style="color:#719e07">=</span>[<span style="color:#2aa198">5</span>, <span style="color:#2aa198">20</span>]) <span style="color:#586e75">##</span>
-fig<span style="color:#719e07">.</span>tight_layout()
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">fig, axes <span style="color:#666">=</span> plt<span style="color:#666">.</span>subplots(<span style="color:#40a070">14</span>, <span style="color:#40a070">1</span>, figsize<span style="color:#666">=</span>[<span style="color:#40a070">5</span>, <span style="color:#40a070">20</span>]) <span style="color:#60a0b0;font-style:italic">##</span>
+fig<span style="color:#666">.</span>tight_layout()
 
-<span style="color:#719e07">for</span> j <span style="color:#719e07">in</span> <span style="color:#b58900">range</span>(<span style="color:#2aa198">14</span>):
-    i <span style="color:#719e07">=</span> float_data[:, j]
-    axes[j]<span style="color:#719e07">.</span>plot(<span style="color:#b58900">range</span>(<span style="color:#b58900">len</span>(i)), i)
-    <span style="color:#586e75"># axes[j].title(header[j])</span>
+<span style="color:#007020;font-weight:bold">for</span> j <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">14</span>):
+    i <span style="color:#666">=</span> float_data[:, j]
+    axes[j]<span style="color:#666">.</span>plot(<span style="color:#007020">range</span>(<span style="color:#007020">len</span>(i)), i)
+    <span style="color:#60a0b0;font-style:italic"># axes[j].title(header[j])</span>
 
-plt<span style="color:#719e07">.</span>show()
+plt<span style="color:#666">.</span>show()
 </code></pre></div><h2 id="pandas">Pandas</h2>
 <blockquote>
 <p>DataFrame.<strong>sort_values</strong>(self, by, axis=0, ascending=True, inplace=False, kind='quicksort&rsquo;, na_position='last&rsquo;)<!-- raw HTML omitted -->Sort by the values along either axis.</p>
 </blockquote>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#719e07">&gt;&gt;&gt;</span> df<span style="color:#719e07">.</span>sort_values(by<span style="color:#719e07">=</span><span style="color:#2aa198">&#39;col1&#39;</span>, ascending<span style="color:#719e07">=</span><span style="color:#268bd2">False</span>, na_position<span style="color:#719e07">=</span><span style="color:#2aa198">&#39;first&#39;</span>)
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">&gt;&gt;&gt;</span> df<span style="color:#666">.</span>sort_values(by<span style="color:#666">=</span><span style="color:#4070a0">&#39;col1&#39;</span>, ascending<span style="color:#666">=</span>False, na_position<span style="color:#666">=</span><span style="color:#4070a0">&#39;first&#39;</span>)
     col1 col2 col3
-<span style="color:#2aa198">3</span>   NaN  <span style="color:#2aa198">8</span>    <span style="color:#2aa198">4</span>
-<span style="color:#2aa198">4</span>   D    <span style="color:#2aa198">7</span>    <span style="color:#2aa198">2</span>
-<span style="color:#2aa198">5</span>   C    <span style="color:#2aa198">4</span>    <span style="color:#2aa198">3</span>
-<span style="color:#2aa198">2</span>   B    <span style="color:#2aa198">9</span>    <span style="color:#2aa198">9</span>
-<span style="color:#2aa198">0</span>   A    <span style="color:#2aa198">2</span>    <span style="color:#2aa198">0</span>
-<span style="color:#2aa198">1</span>   A    <span style="color:#2aa198">1</span>    <span style="color:#2aa198">1</span>
+<span style="color:#40a070">3</span>   NaN  <span style="color:#40a070">8</span>    <span style="color:#40a070">4</span>
+<span style="color:#40a070">4</span>   D    <span style="color:#40a070">7</span>    <span style="color:#40a070">2</span>
+<span style="color:#40a070">5</span>   C    <span style="color:#40a070">4</span>    <span style="color:#40a070">3</span>
+<span style="color:#40a070">2</span>   B    <span style="color:#40a070">9</span>    <span style="color:#40a070">9</span>
+<span style="color:#40a070">0</span>   A    <span style="color:#40a070">2</span>    <span style="color:#40a070">0</span>
+<span style="color:#40a070">1</span>   A    <span style="color:#40a070">1</span>    <span style="color:#40a070">1</span>
 </code></pre></div><p>ascending: 오르는, 상승하는 (ant. descending)</p>
 
 		</div>

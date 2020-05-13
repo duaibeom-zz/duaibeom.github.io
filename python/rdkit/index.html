@@ -106,9 +106,9 @@
 <p><code>rdkit.Chem.SmilesMolSupplier((object)arg1, (str)data[, (str)delimiter=' '[, (int)smilesColumn=0[, (int)nameColumn=1[, (bool)titleLine=True[, (bool)sanitize=True]]]]])</code><!-- raw HTML omitted -->
 파일에 저장되어 있는 SMILES을 input으로 받아 mol type으로 저장하며, delimiter, smiles, name Column을 변수로 받는다.</p>
 <p>변수?? 의미 다시 한번 찾아보기</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#719e07">&gt;&gt;&gt;</span> suppl <span style="color:#719e07">=</span> SmilesMolSupplier(<span style="color:#2aa198">&#39;in.smi&#39;</span>)
-<span style="color:#719e07">&gt;&gt;&gt;</span> <span style="color:#719e07">for</span> mol <span style="color:#719e07">in</span> suppl:
-<span style="color:#719e07">...</span>    mol<span style="color:#719e07">.</span>GetNumAtoms()
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">&gt;&gt;&gt;</span> suppl <span style="color:#666">=</span> SmilesMolSupplier(<span style="color:#4070a0">&#39;in.smi&#39;</span>)
+<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#007020;font-weight:bold">for</span> mol <span style="color:#007020;font-weight:bold">in</span> suppl:
+<span style="color:#666">...</span>    mol<span style="color:#666">.</span>GetNumAtoms()
 </code></pre></div><h3 id="rwmolhttpswwwrdkitorgdocssourcerdkitchemrdchemhtmlrdkitchemrdchemrwmol"><a href="https://www.rdkit.org/docs/source/rdkit.Chem.rdchem.html#rdkit.Chem.rdchem.RWMol">RWMol</a></h3>
 <p><code>class rdkit.Chem.rdchem.RWMol((object)arg1, (Mol)arg2)</code> →  None :<!-- raw HTML omitted -->
 Bases: rdkit.Chem.rdchem.Mol</p>
@@ -154,12 +154,12 @@ Set the stereo groups</p>
 <p>rdkit.Chem.rdmolfiles.<strong>MolToSmiles</strong>((Mol)mol[, (bool)isomericSmiles=True[, (bool)kekuleSmiles=False[, (int)rootedAtAtom=-1[, (bool)canonical=True[, (bool)allBondsExplicit=False[, (bool)allHsExplicit=False[, (bool)doRandom=False]]]]]]]) → str</p>
 <h3 id="kekulize">Kekulize</h3>
 <p>If you’d like to have the Kekule form of the SMILES, first Kekulize the molecule, then use the “kekuleSmiles” option:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; Chem.Kekulize(m)
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; Chem.Kekulize(m)
 &gt;&gt;&gt; Chem.MolToSmiles(m, kekuleSmiles=True)
 &#39;C[C@H](O)C1=CC=CC=C1&#39;
 </code></pre></div><h3 id="rdkit-fingerprint-저장하기">Rdkit Fingerprint 저장하기.</h3>
 <h4 id="to-binary">To Binary</h4>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">mol = Chem.MolFromSmiles(&#39;&lt;SMILES&gt;&#39;)
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">mol = Chem.MolFromSmiles(&#39;&lt;SMILES&gt;&#39;)
 
 fp = FingerprintMols.FingerprintMol(mol)
 
@@ -169,7 +169,7 @@ tmp = DataStructs.ExplicitBitVect(bfp)
 
 fp == tmp  # Ture
 </code></pre></div><h4 id="save-fp">Save FP</h4>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">with open(&#39;test0.list&#39;, &#39;wb&#39;) as f:
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">with open(&#39;test0.list&#39;, &#39;wb&#39;) as f:
     for i in q:
         f.write(i+b&#39;,&#39;) # b&#39;\n&#39; 은 다음 FP에 영향을 주기 때문에 read 시 그 다음 FP가 변형 됨.
 
