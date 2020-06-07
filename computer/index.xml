@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 18 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://duaibeom.github.io/computer/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git 사용법</title>
+      <link>https://duaibeom.github.io/computer/git/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/computer/git/</guid>
+      <description>Git Manual Git은 3가지 요소로 구성이 되어 있다.
+ 작업 트리(working tree or working directory) - Directory 자체를 의미한다. 스테이지(stage) - git 상에 추가된 파일들을 의미한다.</description>
+    </item>
     
     <item>
       <title>SLURM</title>

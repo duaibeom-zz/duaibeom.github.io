@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://duaibeom.github.io/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Utils</title>
+      <link>https://duaibeom.github.io/python/utils/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/utils/</guid>
+      <description>time module perf_counter() and process_time() - https://stackoverflow.com/q/25785243/10103236</description>
+    </item>
     
     <item>
       <title>Jupyter Notebook</title>
@@ -32,23 +41,23 @@
     </item>
     
     <item>
-      <title>Matplotlib</title>
-      <link>https://duaibeom.github.io/python/matplotlib/</link>
-      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://duaibeom.github.io/python/matplotlib/</guid>
-      <description>Matplotlib 사용법 저장 How-to
-rcParams
- matplotlib.pyplot의 hist나 seaborn의 kdeplot의 Density가 1을 넘어 나올 경우에는 Plot의 문제 보다는 data(numpy data?)가 plot package로 넘어갈 때 스케일 때문에 문제가 발생하는 것 같다.</description>
-    </item>
-    
-    <item>
       <title>Pillow (PIL Fork)</title>
       <link>https://duaibeom.github.io/python/pillow/</link>
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://duaibeom.github.io/python/pillow/</guid>
       <description>gg</description>
+    </item>
+    
+    <item>
+      <title>Plot</title>
+      <link>https://duaibeom.github.io/python/plot/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/plot/</guid>
+      <description>Matplotlib 사용법 저장 How-to
+rcParams
+ matplotlib.pyplot의 hist나 seaborn의 kdeplot의 Density가 1을 넘어 나올 경우에는 Plot의 문제 보다는 data(numpy data?)가 plot package로 넘어갈 때 스케일 때문에 문제가 발생하는 것 같다.</description>
     </item>
     
     <item>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Git 사용법 - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Git 사용법" />
+<meta property="og:description" content="Git Manual Git은 3가지 요소로 구성이 되어 있다.
+ 작업 트리(working tree or working directory) - Directory 자체를 의미한다. 스테이지(stage) - git 상에 추가된 파일들을 의미한다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://duaibeom.github.io/computer/git/" />
+<meta property="article:published_time" content="2020-06-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-06T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git 사용법"/>
+<meta name="twitter:description" content="Git Manual Git은 3가지 요소로 구성이 되어 있다.
+ 작업 트리(working tree or working directory) - Directory 자체를 의미한다. 스테이지(stage) - git 상에 추가된 파일들을 의미한다."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/dark.css"  />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/custom-dark.css"  />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://duaibeom.github.io/js/main.js"></script>
+	<script src="https://duaibeom.github.io/js/abc.js"></script>
+	<script src="https://duaibeom.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="https://duaibeom.github.io/">Beom&#39;s Doodle</a></h1>
+	<div class="site-description"><h2>Chemistry | Computer | What is next?</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/duaibeom" title="Github"><i data-feather="github"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">posts</a>
+			</li>
+			
+			<li>
+				<a href="/computer">Computer</a>
+			</li>
+			
+			<li>
+				<a href="/python">Python</a>
+			</li>
+			
+			<li>
+				<a href="/ml">Machine Learning</a>
+			</li>
+			
+			<li>
+				<a href="/flutter">Flutter</a>
+			</li>
+			
+			<li>
+				<a href="/go">Go lang.</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Git 사용법</h1>
+			<div class="meta">Posted at &mdash; Jun 6, 2020</div>
+		</div>
+
+		<div class="markdown">
+			<h2 id="git-manual">Git Manual</h2>
+<p>Git은 3가지 요소로 구성이 되어 있다.</p>
+<ul>
+<li>작업 트리(working tree or working directory) - Directory 자체를 의미한다.</li>
+<li>스테이지(stage) - git 상에 추가된 파일들을 의미한다. (.git/index)</li>
+<li>저장소(repository) - commit 되어 버전으로 남은 것들을 의미한다. (.git/HEAD)</li>
+</ul>
+<p><code>git status</code>: 현재의 상태</p>
+<p><code>git log [--oneline] [--branches] [--graph]</code>: 저장소 log</p>
+<p><code>git diff</code>:</p>
+<p><code>git checkout -- &lt;paths&gt;</code>: 작업 트리에서 수정한 파일 되돌리기</p>
+<p><code>git reset &lt;tree-ish&gt; &lt;paths&gt;</code>: 기존 commit을 제거하고 돌아감. (<code>HEAD^^</code> 현재 HEAD에서 전전을 의미함.)</p>
+<p><code>git revert &lt;tree-ish&gt;</code>: 기존 commit을 놔두고 새로운 commit을 만듦.</p>
+<p><code>git branch &lt;branchname&gt;</code>: branchname으로 새로운 branch 생성.</p>
+<p><code>git checkout &lt;branch&gt;</code>: 해당 branch로 설정.</p>
+<p><code>git log &lt;path&gt;..&lt;path&gt;</code>*: ~~아직 잘 모르겠음.~~</p>
+<p><code>git merge &lt;branch&gt;</code>: 현재 HEAD에 해당 branch를 합친다.</p>
+<p><code>git stash [list|pop|apply|drop]</code>: 수정된 파일들을 일시적으로 숨김.</p>
+<p><code>git pull</code>: <code>git fetch</code> + <code>git merge FETCH_HEAD</code></p>
+<p><code>origin</code>: 원격 저장소를 의미함.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'localhost';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+</body>
+</html>
