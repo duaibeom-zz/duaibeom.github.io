@@ -95,17 +95,20 @@
 <li>스테이지(stage) - git 상에 추가된 파일들을 의미한다. (.git/index)</li>
 <li>저장소(repository) - commit 되어 버전으로 남은 것들을 의미한다. (.git/HEAD)</li>
 </ul>
+<p><code>git commit --amend</code>: 방금 commit한 메세지 수정이 필요할때</p>
 <p><code>git status</code>: 현재의 상태</p>
 <p><code>git log [--oneline] [--branches] [--graph]</code>: 저장소 log</p>
 <p><code>git diff</code>:</p>
 <p><code>git checkout -- &lt;paths&gt;</code>: 작업 트리에서 수정한 파일 되돌리기</p>
-<p><code>git reset &lt;tree-ish&gt; &lt;paths&gt;</code>: 기존 commit을 제거하고 돌아감. (<code>HEAD^^</code> 현재 HEAD에서 전전을 의미함.)</p>
+<p><code>git reset &lt;tree-ish&gt; &lt;paths&gt;</code>: 기존 commit을 제거하고 돌아감.<br>
+(<code>HEAD^^</code> 현재 HEAD에서 전전을 의미함.)</p>
 <p><code>git revert &lt;tree-ish&gt;</code>: 기존 commit을 놔두고 새로운 commit을 만듦.</p>
 <p><code>git branch &lt;branchname&gt;</code>: branchname으로 새로운 branch 생성.</p>
 <p><code>git checkout &lt;branch&gt;</code>: 해당 branch로 설정.</p>
 <p><code>git log &lt;path&gt;..&lt;path&gt;</code>*: ~~아직 잘 모르겠음.~~</p>
 <p><code>git merge &lt;branch&gt;</code>: 현재 HEAD에 해당 branch를 합친다.</p>
-<p><code>git stash [list|pop|apply|drop]</code>: 수정된 파일들을 일시적으로 숨김.</p>
+<p><code>git stash [list|pop|apply|drop]</code>: 수정된 파일들을 일시적으로 숨김.<br>
+(working tree의 변경내용을 commit하기 싫을 때)</p>
 <p><code>git pull</code>: <code>git fetch</code> + <code>git merge FETCH_HEAD</code></p>
 <p><code>origin</code>: 원격 저장소를 의미함.</p>
 
