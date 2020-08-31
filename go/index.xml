@@ -6,11 +6,7 @@
     <description>Recent content in Gos on Beom&#39;s Doodle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© Copyright notice</copyright>
-    
-	<atom:link href="https://duaibeom.github.io/go/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>© Copyright notice</copyright><atom:link href="https://duaibeom.github.io/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://duaibeom.github.io/go/doodle/</link>

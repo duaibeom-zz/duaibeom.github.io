@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://duaibeom.github.io/ml/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine Learning Lecture</title>
       <link>https://duaibeom.github.io/ml/mllecture/</link>

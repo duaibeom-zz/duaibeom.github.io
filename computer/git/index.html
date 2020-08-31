@@ -32,6 +32,7 @@
 <body>
 	<div class="container wrapper post">
 		<div class="header">
+	<base href="https://duaibeom.github.io/">
 	<h1 class="site-title"><a href="https://duaibeom.github.io/">Beom&#39;s Doodle</a></h1>
 	<div class="site-description"><h2>Chemistry | Computer | What is next?</h2><nav class="nav social">
 			<ul class="flat"><a href="https://github.com/duaibeom" title="Github"><i data-feather="github"></i></a></ul>
@@ -111,6 +112,44 @@
 (working tree의 변경내용을 commit하기 싫을 때)</p>
 <p><code>git pull</code>: <code>git fetch</code> + <code>git merge FETCH_HEAD</code></p>
 <p><code>origin</code>: 원격 저장소를 의미함.</p>
+<h2 id="하나의-컴퓨터local-machine에서-다중-user를-이용한-github-작업-수정-중">하나의 컴퓨터(local machine)에서 다중 User를 이용한 github 작업. (수정 중)</h2>
+<p>(SSH key 를 사용한다는 가정을 둔다. SSH key (= public key)는 보안을 올려주는 중요한 기능이다. 굳이 Github가 아니더라도 remote 접속시 보안을 지킬 수 있다.)</p>
+<p>GitHub 작업 시에 개인 계정과 회사 계정이 있을 경우 <code>git</code> 작업이 다소 복잡해진다. 우선 <code>git clone</code> 부터 문제가 생긴다.</p>
+<p>GitHub 는 계정당 하나의 ssh-key를 가지게 된다. 서로 다른 User가 동일한 ssh-key를 가질 수 없다. User 별로 ssh-key가 필요하다.</p>
+<p>본 글은 <a href="https://gist.github.com/JoaquimLey/e6049a12c8fd2923611802384cd2fb4a">JoaquimLey의 github_multiple-accounts.md</a>와 <a href="https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">github docs</a>를 참조했다.</p>
+<ol>
+<li>
+<p>각 GitHub 계정 별 ssh-key를 생성한다. <code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</code> (여기서 <code>-t</code>는 rsa 방식을 이용하며, <code>-b</code>는 4096 bit의 key를 생성하며, <code>-C</code>는 &ldquo;<a href="mailto:your_email@example.com">your_email@example.com</a>&quot;의 comment를 추가하겠다는 얘기이다. 기본은 rsa에 2048 bit 의 key가 생성된다.)<br>
+만약 기존의 <code>~/.ssh/id_rsa</code> 가 존재하면, <code>ssh-keygen -f ~/.ssh/id_rsa_COMPANY</code>로 다른 이름을 명명해준다.</p>
+</li>
+<li>
+<p>기본 위치인 <code>/home/$USER/.ssh/id_rsa</code>에 저장을 해주고, passphrase를 입력해준다. <code>passphrase</code>는 문장형 비밀번호이다. 공백 포함이 가능하다. (ex. <code>이것은 문장형 비밀번호</code>; <del>한글을 영어로 입력을 해주면 보안성이 매우 좋다.. 한국인만 가능하다</del>)</p>
+</li>
+<li>
+<p><code>eval &quot;$(ssh-agent -s)&quot;</code> ssh-agent를 불러온다. terminal 시작 시 자동으로 불러올 수 있다. (추가 예정)</p>
+</li>
+<li>
+<p><code>ssh-add ~/.ssh/id_rsa_*</code>로 key를 agent에 추가하면 된다. (사용하고자 하는 key를 불러오면 된다.)</p>
+</li>
+<li>
+<p><code>~/.ssh/config</code> 파일에 github ssh config 정보를 추가한다.</p>
+</li>
+</ol>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Host github-my
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_MY
+    ForwardAgent yes
+
+Host github-company
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_COMPANY
+    ForwardAgent yes
+</code></pre></div><ol start="6">
+<li><code>ssh -T github-my</code> 와 <code>ssh -T github-company</code>를 모두 사용하여 서로 다른 User name이 나오는지 확인한다. 목적에 맞는 User name 이 등장하면 성공! 같은 이름이 등장하면 사용된 key가 제대로 설정되지 않은 것이다.</li>
+<li><code>git clone github-my:MY-ID/MY-REPO.git</code> 와 같이 불러오면 된다.</li>
+</ol>
 
 		</div>
 

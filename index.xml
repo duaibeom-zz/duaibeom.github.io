@@ -7,10 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NUMPY note</title>
+      <link>https://duaibeom.github.io/python/numpy/</link>
+      <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/numpy/</guid>
+      <description>&amp;gt;&amp;gt;&amp;gt; a = numpy.array([0, 3, 0, 1, 0, 1, 2, 1, 0, 0, 0, 0, 1, 3, 4]) &amp;gt;&amp;gt;&amp;gt; unique, counts = numpy.</description>
+    </item>
     
-	<atom:link href="https://duaibeom.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH</title>
+      <link>https://duaibeom.github.io/computer/ssh/</link>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/computer/ssh/</guid>
+      <description>ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &amp;lt;someonePC&amp;gt;는 ~/.ssh/id_rsa.pub가 &amp;lt;someonePC&amp;gt;:~/.ssh/authorized_keys에 추가가 된다.
+ssh forwarding </description>
+    </item>
     
+    <item>
+      <title>Fingerprint (Chemistry)</title>
+      <link>https://duaibeom.github.io/python/fingerprint/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/python/fingerprint/</guid>
+      <description>Extended Connectivity Fingerprint (ECFP) family https://docs.chemaxon.com/display/docs/Extended+Connectivity+Fingerprint+ECFP
+https://www.rdkit.org/docs/GettingStartedInPython.html#morgan-fingerprints-circular-fingerprints
+Morgan fingerprint(Circular Fingerprints): Fingerprints based on the Morgan algorithm, similar to the ECFP/FCFP fingerprints; J.</description>
+    </item>
     
     <item>
       <title>Git 사용법</title>
@@ -66,7 +92,8 @@
       <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://duaibeom.github.io/computer/slurm_manual/</guid>
-      <description>salloc -p pgpu &amp;ndash;gres=gpu:1 &amp;ndash;time=1:00:00 srun &amp;ndash;pty /bin/bash &amp;ndash;login</description>
+      <description>salloc -p pgpu --gres=gpu:1 --time=1:00:00 srun --pty /bin/bash --login
+array jobs #SBATCH -J ARRAY_JOB #SBATCH --cpus-per-task=4 # job 당 core 개수 #SBATCH --array=0-4%2 # % 의미는 다음 array에서 2개씩만 계산을 이용하겠다는 의미이다.</description>
     </item>
     
     <item>
@@ -125,9 +152,10 @@ CS230 - CS230: Deep Learning | Autumn 2018 Site &amp;amp; NoteVideo</description
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://duaibeom.github.io/python/plot/</guid>
-      <description>Matplotlib 사용법 저장 How-to
+      <description>Matplotlib 사용법 저장 Cheatsheets
+How-to
 rcParams
- matplotlib.pyplot의 hist나 seaborn의 kdeplot의 Density가 1을 넘어 나올 경우에는 Plot의 문제 보다는 data(numpy data?)가 plot package로 넘어갈 때 스케일 때문에 문제가 발생하는 것 같다.</description>
+ matplotlib.pyplot의 hist나 seaborn의 kdeplot의 Density가 1을 넘어 나올 경우에는 Plot의 문제 보다는 data(numpy data?</description>
     </item>
     
     <item>
@@ -174,10 +202,11 @@ rcParams
       <description>PYTHON3 NOTE char.isdigit()
 char.isupper()
 char.islower()
-print(float(&#39;&#39;.join(filter(str.isdigit, x))))Extract number from a string
+print(float(&#39;&#39;.join(filter(str.isdigit, x))))
+Extract number from a string
 SomeStr.endswith((&#39;multiple&#39;, &#39;suffixes&#39;))
-가상환경 만들기 가상 환경의 장점은
- 가상환경은 다양한 버전의 Python 및 Python package 설치가 가능하다.</description>
+@ staticmethod https://stackoverflow.com/a/1669524
+가상환경 만들기 가상 환경의 장점은</description>
     </item>
     
     <item>

@@ -7,10 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://duaibeom.github.io/computer/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH</title>
+      <link>https://duaibeom.github.io/computer/ssh/</link>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/computer/ssh/</guid>
+      <description>ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &amp;lt;someonePC&amp;gt;는 ~/.ssh/id_rsa.pub가 &amp;lt;someonePC&amp;gt;:~/.ssh/authorized_keys에 추가가 된다.
+ssh forwarding </description>
+    </item>
     
     <item>
       <title>Git 사용법</title>
@@ -28,7 +34,8 @@
       <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://duaibeom.github.io/computer/slurm_manual/</guid>
-      <description>salloc -p pgpu &amp;ndash;gres=gpu:1 &amp;ndash;time=1:00:00 srun &amp;ndash;pty /bin/bash &amp;ndash;login</description>
+      <description>salloc -p pgpu --gres=gpu:1 --time=1:00:00 srun --pty /bin/bash --login
+array jobs #SBATCH -J ARRAY_JOB #SBATCH --cpus-per-task=4 # job 당 core 개수 #SBATCH --array=0-4%2 # % 의미는 다음 array에서 2개씩만 계산을 이용하겠다는 의미이다.</description>
     </item>
     
     <item>

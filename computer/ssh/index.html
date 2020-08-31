@@ -2,16 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Gos - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="alternate" type="application/rss+xml" href="https://duaibeom.github.io/go/index.xml" title="Beom's Doodle" />
-	<meta property="og:title" content="Gos" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://duaibeom.github.io/go/" />
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>SSH - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="SSH" />
+<meta property="og:description" content="ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &lt;someonePC&gt;는 ~/.ssh/id_rsa.pub가 &lt;someonePC&gt;:~/.ssh/authorized_keys에 추가가 된다.
+ssh forwarding " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://duaibeom.github.io/computer/ssh/" />
+<meta property="article:published_time" content="2020-07-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-26T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Gos"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="SSH"/>
+<meta name="twitter:description" content="ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &lt;someonePC&gt;는 ~/.ssh/id_rsa.pub가 &lt;someonePC&gt;:~/.ssh/authorized_keys에 추가가 된다.
+ssh forwarding "/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/normalize.css" />
@@ -27,9 +29,8 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
-
 <body>
-	<div class="container wrapper list">
+	<div class="container wrapper post">
 		<div class="header">
 	<base href="https://duaibeom.github.io/">
 	<h1 class="site-title"><a href="https://duaibeom.github.io/">Beom&#39;s Doodle</a></h1>
@@ -82,17 +83,42 @@
 </div>
 
 
-		
-			<h1 class="page-title">All articles</h1>
-		
+		<div class="post-header">
+			<h1 class="title">SSH</h1>
+			<div class="meta">Posted at &mdash; Jul 26, 2020</div>
+		</div>
 
+		<div class="markdown">
+			<h2 id="ssh">ssh</h2>
+<p><code>ssh-keygen -p -f ~/.ssh/id_rsa</code> passphrase를 변경할 수 있다.
+<code>ssh-copy-id &lt;someonePC&gt;</code>는 <code>~/.ssh/id_rsa.pub</code>가 <code>&lt;someonePC&gt;:~/.ssh/authorized_keys</code>에 추가가 된다.</p>
+<h2 id="ssh-forwarding">ssh forwarding</h2>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
 		
+		
+		if (window.location.hostname == "localhost")
+			return;
 
-		<ul class="posts"><li class="post">
-				<a href="/go/doodle/"></a> <span class="meta">Jan 1, 0001</span>
-			</li></ul>
-	</div>
-
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'duaibeom-github-io';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
 	<div class="footer wrapper">
 	<nav class="nav">
 		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
@@ -114,5 +140,4 @@ if (!doNotTrack) {
 
 <script>feather.replace()</script>
 </body>
-
 </html>
