@@ -2,18 +2,26 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>SSH - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="SSH" />
-<meta property="og:description" content="ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &lt;someonePC&gt;는 ~/.ssh/id_rsa.pub가 &lt;someonePC&gt;:~/.ssh/authorized_keys에 추가가 된다.
-ssh forwarding config Host SomeonePC Hostname 192." />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>정규화 표현식(Regular Expression) - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="정규화 표현식(Regular Expression)" />
+<meta property="og:description" content="wikipedia_kr
+반복 관련 메타 문자 * 0회
+&#43; 1회
+? 0 또는 1회
+{m(, n)} m회부터 n회까지
+반복 관련 메타 문자 ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://duaibeom.github.io/computer/ssh/" />
-<meta property="article:published_time" content="2020-07-26T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-07-26T00:00:00+00:00" />
+<meta property="og:url" content="https://duaibeom.github.io/programming/regexp/" />
+<meta property="article:published_time" content="2020-01-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-15T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="SSH"/>
-<meta name="twitter:description" content="ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &lt;someonePC&gt;는 ~/.ssh/id_rsa.pub가 &lt;someonePC&gt;:~/.ssh/authorized_keys에 추가가 된다.
-ssh forwarding config Host SomeonePC Hostname 192."/>
+<meta name="twitter:title" content="정규화 표현식(Regular Expression)"/>
+<meta name="twitter:description" content="wikipedia_kr
+반복 관련 메타 문자 * 0회
+&#43; 1회
+? 0 또는 1회
+{m(, n)} m회부터 n회까지
+반복 관련 메타 문자 ."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/normalize.css" />
@@ -75,34 +83,25 @@ ssh forwarding config Host SomeonePC Hostname 192."/>
 
 
 		<div class="post-header">
-			<h1 class="title">SSH</h1>
-			<div class="meta">Posted at &mdash; Jul 26, 2020</div>
+			<h1 class="title">정규화 표현식(Regular Expression)</h1>
+			<div class="meta">Posted at &mdash; Jan 15, 2020</div>
 		</div>
 
 		<div class="markdown">
-			<h2 id="ssh">ssh</h2>
-<p><code>ssh-keygen -p -f ~/.ssh/id_rsa</code> passphrase를 변경할 수 있다.
-<code>ssh-copy-id &lt;someonePC&gt;</code>는 <code>~/.ssh/id_rsa.pub</code>가 <code>&lt;someonePC&gt;:~/.ssh/authorized_keys</code>에 추가가 된다.</p>
-<h2 id="ssh-forwarding">ssh forwarding</h2>
-<h2 id="config">config</h2>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">Host SomeonePC
-    Hostname 192.168.0.999
-    IdentityFile ~/.ssh/id_rsa
-    IdentitiesOnly yes
-    User <span style="color:#bb60d5">$USER</span>
+			<p><a href="https://ko.wikipedia.org/wiki/%EC%A0%95%EA%B7%9C_%ED%91%9C%ED%98%84%EC%8B%9D">wikipedia_kr</a></p>
+<h3 id="반복-관련-메타-문자">반복 관련 메타 문자</h3>
+<p><code>*</code> 0회</p>
+<p><code>+</code> 1회</p>
+<p><code>?</code> 0 또는 1회</p>
+<p><code>{m(, n)}</code> m회부터 n회까지</p>
+<h3 id="반복-관련-메타-문자-1">반복 관련 메타 문자</h3>
+<p><code>.</code> 문자</p>
+<p><code>^</code> 처음</p>
+<p><code>$</code> 끝</p>
+<p><code>[]</code> 문자 클래스</p>
+<p><code>()</code> 하위 식  &ldquo;abc¦adc&rdquo; == &ldquo;a(b¦d)c&rdquo;</p>
+<p><code>|</code> 선택</p>
 
-Host github-1st_ID
-    Hostname github.com
-    IdentityFile ~/.ssh/<span style="color:#bb60d5">$1</span>st_PUBKEY
-    IdentitiesOnly yes
-    User git
-
-Host github-2nd_ID
-    Hostname github.com
-    IdentityFile ~/.ssh/<span style="color:#bb60d5">$2</span>nd_PUBKEY
-    IdentitiesOnly yes
-    User git
-</code></pre></div>
 		</div>
 
 		<div class="post-tags">

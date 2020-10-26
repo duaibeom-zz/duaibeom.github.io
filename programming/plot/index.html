@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Plot - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Plot" />
+<meta property="og:description" content="Matplotlib 사용법 저장 Cheatsheets
+How-to
+rcParams
+ matplotlib.pyplot의 hist나 seaborn의 kdeplot의 Density가 1을 넘어 나올 경우에는 Plot의 문제 보다는 data(numpy data?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://duaibeom.github.io/programming/plot/" />
+<meta property="article:published_time" content="2020-01-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-21T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Plot"/>
+<meta name="twitter:description" content="Matplotlib 사용법 저장 Cheatsheets
+How-to
+rcParams
+ matplotlib.pyplot의 hist나 seaborn의 kdeplot의 Density가 1을 넘어 나올 경우에는 Plot의 문제 보다는 data(numpy data?"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/custom.css" />
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://duaibeom.github.io/js/main.js"></script>
+	<script src="https://duaibeom.github.io/js/abc.js"></script>
+	<script src="https://duaibeom.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://duaibeom.github.io/">
+	<h1 class="site-title"><a href="https://duaibeom.github.io/">Beom&#39;s Doodle</a></h1>
+	<div class="site-description"><h2>Chemistry | Computer | What is next?</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/duaibeom" title="Github"><i data-feather="github"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">posts</a>
+			</li>
+			
+			<li>
+				<a href="/computer">Computer</a>
+			</li>
+			
+			<li>
+				<a href="/programming">Programming</a>
+			</li>
+			
+			<li>
+				<a href="/ml">Machine Learning</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Plot</h1>
+			<div class="meta">Posted at &mdash; Jan 21, 2020</div>
+		</div>
+
+		<div class="markdown">
+			<h1 id="matplotlib-사용법-저장">Matplotlib 사용법 저장</h1>
+<p><a href="https://github.com/matplotlib/cheatsheets">Cheatsheets</a></p>
+<p><a href="https://matplotlib.org/faq/howto_faq.html#plot-numpy-datetime64-values">How-to</a></p>
+<p><a href="https://matplotlib.org/tutorials/introductory/customizing.html?highlight=figure.figsize#a-sample-matplotlibrc-file">rcParams</a></p>
+<ul>
+<li>matplotlib.pyplot의 <code>hist</code>나 seaborn의 <code>kdeplot</code>의 Density가 1을 넘어 나올 경우에는 Plot의 문제 보다는 data(numpy data?)가 plot package로 넘어갈 때 스케일 때문에 문제가 발생하는 것 같다. 이를 확인하기 위해 <code>numpy.histogram</code>을 확인하면 된다.</li>
+</ul>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">counts, bins <span style="color:#666">=</span> np<span style="color:#666">.</span>histogram(data, bins<span style="color:#666">=</span><span style="color:#40a070">100</span>, <span style="color:#007020">range</span><span style="color:#666">=</span>(<span style="color:#40a070">0</span>, <span style="color:#40a070">1</span>), density<span style="color:#666">=</span>True)
+np<span style="color:#666">.</span>sum(counts) <span style="color:#666">&gt;&gt;</span> <span style="color:#40a070">100.0</span> 
+plt<span style="color:#666">.</span>plot([i<span style="color:#666">*</span><span style="color:#40a070">0.01</span> <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">0</span>, <span style="color:#40a070">100</span>)], counts<span style="color:#666">*</span><span style="color:#40a070">0.01</span>))
+np<span style="color:#666">.</span>diff()<span style="">?</span>
+</code></pre></div><h3 id="density-or-probability-density">density? or probability density?</h3>
+<h4 id="histograms-and-density-plots-in-python">Histograms and Density Plots in Python</h4>
+<ul>
+<li><a href="https://towardsdatascience.com/histograms-and-density-plots-in-python-f6bda88f5ac0">https://towardsdatascience.com/histograms-and-density-plots-in-python-f6bda88f5ac0</a></li>
+</ul>
+<h4 id="can-a-probability-distribution-value-exceeding-1-be-ok">Can a probability distribution value exceeding 1 be OK?</h4>
+<ul>
+<li><a href="https://stats.stackexchange.com/q/4220/285073">https://stats.stackexchange.com/q/4220/285073</a></li>
+</ul>
+<h3 id="boxplot">boxplot</h3>
+<ul>
+<li><a href="https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51">https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51</a></li>
+</ul>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">fig, axes <span style="color:#666">=</span> plt<span style="color:#666">.</span>subplots(<span style="color:#40a070">14</span>, <span style="color:#40a070">1</span>, figsize<span style="color:#666">=</span>[<span style="color:#40a070">5</span>, <span style="color:#40a070">20</span>]) <span style="color:#60a0b0;font-style:italic">##</span>
+fig<span style="color:#666">.</span>tight_layout()
+
+<span style="color:#007020;font-weight:bold">for</span> j <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">14</span>):
+    i <span style="color:#666">=</span> float_data[:, j]
+    axes[j]<span style="color:#666">.</span>plot(<span style="color:#007020">range</span>(<span style="color:#007020">len</span>(i)), i)
+    <span style="color:#60a0b0;font-style:italic"># axes[j].title(header[j])</span>
+
+<span style="color:#4070a0">``</span><span style="">`</span>python
+<span style="color:#666">&gt;&gt;&gt;</span> a <span style="color:#666">=</span> numpy<span style="color:#666">.</span>array([<span style="color:#40a070">0</span>, <span style="color:#40a070">3</span>, <span style="color:#40a070">0</span>, <span style="color:#40a070">1</span>, <span style="color:#40a070">0</span>, <span style="color:#40a070">1</span>, <span style="color:#40a070">2</span>, <span style="color:#40a070">1</span>, <span style="color:#40a070">0</span>, <span style="color:#40a070">0</span>, <span style="color:#40a070">0</span>, <span style="color:#40a070">0</span>, <span style="color:#40a070">1</span>, <span style="color:#40a070">3</span>, <span style="color:#40a070">4</span>])
+<span style="color:#666">&gt;&gt;&gt;</span> unique, counts <span style="color:#666">=</span> numpy<span style="color:#666">.</span>unique(a, return_counts<span style="color:#666">=</span>True)
+<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#007020">dict</span>(<span style="color:#007020">zip</span>(unique, counts))
+{<span style="color:#40a070">0</span>: <span style="color:#40a070">7</span>, <span style="color:#40a070">1</span>: <span style="color:#40a070">4</span>, <span style="color:#40a070">2</span>: <span style="color:#40a070">1</span>, <span style="color:#40a070">3</span>: <span style="color:#40a070">2</span>, <span style="color:#40a070">4</span>: <span style="color:#40a070">1</span>}
+
+<span style="color:#666">&gt;&gt;&gt;</span> y <span style="color:#666">=</span> np<span style="color:#666">.</span>array([<span style="color:#40a070">1</span>, <span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>, <span style="color:#40a070">0</span>, <span style="color:#40a070">2</span>, <span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>, <span style="color:#40a070">0</span>, <span style="color:#40a070">0</span>, <span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>, <span style="color:#40a070">0</span>])
+<span style="color:#666">&gt;&gt;&gt;</span> np<span style="color:#666">.</span>count_nonzero(y <span style="color:#666">==</span> <span style="color:#40a070">1</span>)
+<span style="color:#40a070">1</span>
+<span style="color:#666">&gt;&gt;&gt;</span> np<span style="color:#666">.</span>count_nonzero(y <span style="color:#666">==</span> <span style="color:#40a070">2</span>)
+<span style="color:#40a070">7</span>
+<span style="color:#666">&gt;&gt;&gt;</span> np<span style="color:#666">.</span>count_nonzero(y <span style="color:#666">==</span> <span style="color:#40a070">3</span>)
+<span style="color:#40a070">3</span>
+</code></pre></div>
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'duaibeom-github-io';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+</body>
+</html>

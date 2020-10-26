@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Rdkit note - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Rdkit note" />
+<meta property="og:description" content="Conda 를 이용한 rdkit 설치. RDKIT을 콘다를 이용하지 않고, 설치하는 방법은 매우 어렵다. (lib 문제로 설치가 어렵다.)
+마음 편하게 anaconda3를 이용해 설치를 하자." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://duaibeom.github.io/programming/rdkit/" />
+<meta property="article:published_time" content="2019-10-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-28T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Rdkit note"/>
+<meta name="twitter:description" content="Conda 를 이용한 rdkit 설치. RDKIT을 콘다를 이용하지 않고, 설치하는 방법은 매우 어렵다. (lib 문제로 설치가 어렵다.)
+마음 편하게 anaconda3를 이용해 설치를 하자."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/custom.css" />
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://duaibeom.github.io/js/main.js"></script>
+	<script src="https://duaibeom.github.io/js/abc.js"></script>
+	<script src="https://duaibeom.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://duaibeom.github.io/">
+	<h1 class="site-title"><a href="https://duaibeom.github.io/">Beom&#39;s Doodle</a></h1>
+	<div class="site-description"><h2>Chemistry | Computer | What is next?</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/duaibeom" title="Github"><i data-feather="github"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">posts</a>
+			</li>
+			
+			<li>
+				<a href="/computer">Computer</a>
+			</li>
+			
+			<li>
+				<a href="/programming">Programming</a>
+			</li>
+			
+			<li>
+				<a href="/ml">Machine Learning</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Rdkit note</h1>
+			<div class="meta">Posted at &mdash; Oct 28, 2019</div>
+		</div>
+
+		<div class="markdown">
+			<h2 id="conda-를-이용한-rdkit-설치">Conda 를 이용한 rdkit 설치.</h2>
+<p>RDKIT을 콘다를 이용하지 않고, 설치하는 방법은 매우 어렵다. (lib 문제로 설치가 어렵다.)</p>
+<p>마음 편하게 <strong>anaconda3</strong>를 이용해 설치를 하자.</p>
+<h3 id="anaconda3httpswwwanacondacomdistribution-설치-방법"><a href="https://www.anaconda.com/distribution/">Anaconda3</a> 설치 방법</h3>
+<p>CentOS 7.7 에서 진행했다.</p>
+<p><code>bash Anaconda3-2019.10-Linux-x86_64.sh</code>로 설치를 시작한다.</p>
+<p><code>conda init</code>을 하지 않으면 venv 생성이 어렵다. 해주는 것이 좋다.</p>
+<blockquote>
+<p>문제는 하게 되면 기본으로 anaconda3 환경을 사용하게 된다.<!-- raw HTML omitted -->이것이 싫다면 <code>conda config --set auto_activate_base false</code> 해주자.</p>
+</blockquote>
+<p><code>conda create -n rdkit_venv python=3.7</code>을 이용해 rdkit 설치를 위한 가상환경을 만든다.</p>
+<p>생성 후에 <code>conda activate rdkit_venv</code>로 <strong>rdkit_venv</strong>를 활성화 해주자.</p>
+<p><code>conda install -c rdkit rdkit</code>로 rdkit을 설치.</p>
+<p>끝.</p>
+<p>PS. <code>anconda3/envs/rdkit_venv</code> dir를 복사하여 그대로 사용할 수 있다. 다른 OS상에서는 약간의 문제가 발생한다.</p>
+<h3 id="smilesmolsupplierhttpswwwrdkitorgdocssourcerdkitchemrdmolfileshtmlrdkitchemrdmolfilessmilesmolsupplier"><a href="https://www.rdkit.org/docs/source/rdkit.Chem.rdmolfiles.html#rdkit.Chem.rdmolfiles.SmilesMolSupplier">SmilesMolSupplier</a></h3>
+<p><code>rdkit.Chem.SmilesMolSupplier((object)arg1, (str)data[, (str)delimiter=' '[, (int)smilesColumn=0[, (int)nameColumn=1[, (bool)titleLine=True[, (bool)sanitize=True]]]]])</code><!-- raw HTML omitted -->
+파일에 저장되어 있는 SMILES을 input으로 받아 mol type으로 저장하며, delimiter, smiles, name Column을 변수로 받는다.</p>
+<p>변수?? 의미 다시 한번 찾아보기</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">&gt;&gt;&gt;</span> suppl <span style="color:#666">=</span> SmilesMolSupplier(<span style="color:#4070a0">&#39;in.smi&#39;</span>)
+<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#007020;font-weight:bold">for</span> mol <span style="color:#007020;font-weight:bold">in</span> suppl:
+<span style="color:#666">...</span>    mol<span style="color:#666">.</span>GetNumAtoms()
+</code></pre></div><h3 id="rwmolhttpswwwrdkitorgdocssourcerdkitchemrdchemhtmlrdkitchemrdchemrwmol"><a href="https://www.rdkit.org/docs/source/rdkit.Chem.rdchem.html#rdkit.Chem.rdchem.RWMol">RWMol</a></h3>
+<p><code>class rdkit.Chem.rdchem.RWMol((object)arg1, (Mol)arg2)</code> →  None :<!-- raw HTML omitted -->
+Bases: rdkit.Chem.rdchem.Mol</p>
+<p>The RW molecule class (read/write)</p>
+<p>This class is a more-performant version of the EditableMolecule class in that it is a ‘live’ molecule and shares the interface from the Mol class. All changes are performed without the need to create a copy of the molecule using GetMol() (this is still available, however).</p>
+<p>n.b. Eventually this class may become a direct replacement for EditableMol</p>
+<p>Construct from a Mol</p>
+<ul>
+<li>
+<p><strong>AddAtom</strong>((RWMol)arg1, (Atom)atom) → int :<!-- raw HTML omitted -->
+add an atom, returns the index of the newly added atom</p>
+</li>
+<li>
+<p><strong>AddBond</strong>((RWMol)arg1, (int)beginAtomIdx, (int)endAtomIdx[, (BondType)order=rdkit.Chem.rdchem.BondType.UNSPECIFIED]) → int :<!-- raw HTML omitted -->
+add a bond, returns the new number of bonds</p>
+</li>
+<li>
+<p><strong>GetMol</strong>((RWMol)arg1) → Mol :<!-- raw HTML omitted -->
+Returns a Mol (a normal molecule)</p>
+</li>
+<li>
+<p><strong>RemoveAtom</strong>((RWMol)arg1, (int)arg2) → None :<!-- raw HTML omitted -->
+Remove the specified atom from the molecule</p>
+</li>
+<li>
+<p><strong>RemoveBond</strong>((RWMol)arg1, (int)arg2, (int)arg3) → None :<!-- raw HTML omitted -->
+Remove the specified bond from the molecule</p>
+</li>
+<li>
+<p><strong>ReplaceAtom</strong>((RWMol)arg1, (int)index, (Atom)newAtom[, (bool)updateLabel=False[, (bool)preserveProps=False]]) → None :<!-- raw HTML omitted -->
+replaces the specified atom with the provided one If updateLabel is True, the new atom becomes the active atom If preserveProps is True preserve keep the existing props unless explicit set on the new atom</p>
+</li>
+<li>
+<p><strong>ReplaceBond</strong>((RWMol)arg1, (int)index, (Bond)newBond[, (bool)preserveProps=False]) → None :<!-- raw HTML omitted -->
+replaces the specified bond with the provided one. If preserveProps is True preserve keep the existing props unless explicit set on the new bond</p>
+</li>
+<li>
+<p><strong>SetStereoGroups</strong>((RWMol)arg1, (list)stereo_groups) → None :<!-- raw HTML omitted -->
+Set the stereo groups</p>
+</li>
+</ul>
+<h3 id="moltosmiles"><a href="">MolToSmiles</a></h3>
+<p>rdkit.Chem.rdmolfiles.<strong>MolToSmiles</strong>((Mol)mol[, (bool)isomericSmiles=True[, (bool)kekuleSmiles=False[, (int)rootedAtAtom=-1[, (bool)canonical=True[, (bool)allBondsExplicit=False[, (bool)allHsExplicit=False[, (bool)doRandom=False]]]]]]]) → str</p>
+<h3 id="kekulize">Kekulize</h3>
+<p>If you’d like to have the Kekule form of the SMILES, first Kekulize the molecule, then use the “kekuleSmiles” option:</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&gt;&gt;&gt; Chem.Kekulize(m)
+&gt;&gt;&gt; Chem.MolToSmiles(m, kekuleSmiles=True)
+&#39;C[C@H](O)C1=CC=CC=C1&#39;
+</code></pre></div><h3 id="rdkit-fingerprint-저장하기">Rdkit Fingerprint 저장하기.</h3>
+<h4 id="to-binary">To Binary</h4>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">mol = Chem.MolFromSmiles(&#39;&lt;SMILES&gt;&#39;)
+
+fp = FingerprintMols.FingerprintMol(mol)
+
+bfp = fp.ToBinary()
+
+tmp = DataStructs.ExplicitBitVect(bfp)
+
+fp == tmp  # Ture
+</code></pre></div><h4 id="save-fp">Save FP</h4>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">with open(&#39;test0.list&#39;, &#39;wb&#39;) as f:
+    for i in q:
+        f.write(i+b&#39;,&#39;) # b&#39;\n&#39; 은 다음 FP에 영향을 주기 때문에 read 시 그 다음 FP가 변형 됨.
+
+w = []
+with open(&#39;test0.list&#39;, &#39;rb&#39;) as f:
+    e = f.read()
+
+e.split(b&#39;,&#39;)
+</code></pre></div>
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'duaibeom-github-io';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+</body>
+</html>

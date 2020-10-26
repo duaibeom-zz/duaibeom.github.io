@@ -17,8 +17,7 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/custom.css" />
-	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
-	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/custom.css" media="(prefers-color-scheme: dark)" />
+	
 
 	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 	<script src="https://duaibeom.github.io/js/main.js"></script>
@@ -53,19 +52,11 @@
 			</li>
 			
 			<li>
-				<a href="/python">Python</a>
+				<a href="/programming">Programming</a>
 			</li>
 			
 			<li>
 				<a href="/ml">Machine Learning</a>
-			</li>
-			
-			<li>
-				<a href="/flutter">Flutter</a>
-			</li>
-			
-			<li>
-				<a href="/go">Go lang.</a>
 			</li>
 			
 			<li>
@@ -111,7 +102,7 @@
 <p><code>-e script</code>, add the script to the commands to be executed<!-- raw HTML omitted --></p>
 <p><code>-f script-file</code>, add the contents of script-file to the commands to be executed<!-- raw HTML omitted --></p>
 <p><code>-i[SUFFIX]</code>, edit files in place (makes backup if SUFFIX supplied)<!-- raw HTML omitted --></p>
-<p><code>-l N</code>, specify the desired line-wrap length for the `l&rsquo; command<!-- raw HTML omitted --></p>
+<p><code>-l N</code>, specify the desired line-wrap length for the `l' command<!-- raw HTML omitted --></p>
 <p><code>-E, -r</code>, use extended regular expressions in the script<!-- raw HTML omitted -->
 (for portability use POSIX -E).</p>
 <p><code>-d</code>, delete, i.e. 3d, 3rd row&rsquo;s deleted.</p>
@@ -123,6 +114,9 @@ sed -i <span style="color:#4070a0">&#39;/abc/d; /XYZ/d&#39;</span> /tmp/file.txt
 <p><code>-w</code> word</p>
 <p><code>-c</code> character</p>
 <h2 id="sort">sort</h2>
+<h2 id="svg-to-png">SVG to PNG</h2>
+<p>ImageMagick has some issue. <code>inkscape -w 1024 -h 1024 input.svg --export-filename output.png</code></p>
+<p>ref - <a href="https://stackoverflow.com/a/14174624/10103236">https://stackoverflow.com/a/14174624/10103236</a></p>
 <h1 id="terminal-shortcuthttpslinuxhandbookcomlinux-shortcuts"><a href="https://linuxhandbook.com/linux-shortcuts/">Terminal Shortcut</a></h1>
 <ol>
 <li><code>Tab</code></li>
@@ -145,6 +139,9 @@ sed -i <span style="color:#4070a0">&#39;/abc/d; /XYZ/d&#39;</span> /tmp/file.txt
 <code>ssh-copy-id &lt;someonePC&gt;</code>는 <code>~/.ssh/id_rsa.pub</code>가 <code>&lt;someonePC&gt;:~/.ssh/authorized_keys</code>에 추가가 된다.</p>
 <h2 id="lsof">lsof</h2>
 <h2 id="login-info">login info</h2>
+<h2 id="uname">uname</h2>
+<p><code>-a</code>: all information
+<code>-r</code>: kernel release</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007020">#!/bin/bash
 </span><span style="color:#007020"></span>
 <span style="color:#60a0b0;font-style:italic"># Basic info</span>

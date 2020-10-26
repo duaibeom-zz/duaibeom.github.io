@@ -4,16 +4,21 @@
   
   <url>
     <loc>https://duaibeom.github.io/</loc>
-    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/numpy/</loc>
-    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
+    <loc>https://duaibeom.github.io/programming/</loc>
+    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/</loc>
+    <loc>https://duaibeom.github.io/programming/vscode/</loc>
+    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/programming/numpy/</loc>
     <lastmod>2020-08-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,7 +33,7 @@
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/fingerprint/</loc>
+    <loc>https://duaibeom.github.io/programming/fingerprint/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,12 +43,12 @@
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/utils/</loc>
+    <loc>https://duaibeom.github.io/programming/utils/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/jupyter_notebook/</loc>
+    <loc>https://duaibeom.github.io/programming/jupyter_notebook/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -78,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/pytesseract/</loc>
+    <loc>https://duaibeom.github.io/programming/pytesseract/</loc>
     <lastmod>2020-01-31T00:00:00+00:00</lastmod>
   </url>
   
@@ -93,17 +98,17 @@
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/pillow/</loc>
+    <loc>https://duaibeom.github.io/programming/pillow/</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/plot/</loc>
+    <loc>https://duaibeom.github.io/programming/plot/</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/regexp/</loc>
+    <loc>https://duaibeom.github.io/programming/regexp/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -118,12 +123,12 @@
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/python3/</loc>
+    <loc>https://duaibeom.github.io/programming/python3/</loc>
     <lastmod>2019-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/python/rdkit/</loc>
+    <loc>https://duaibeom.github.io/programming/rdkit/</loc>
     <lastmod>2019-10-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -148,19 +153,13 @@
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/flutter/doodle/</loc>
+    <loc>https://duaibeom.github.io/programming/dart/</loc>
+    <lastmod>1111-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/go/doodle/</loc>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/flutter/</loc>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/go/</loc>
+    <loc>https://duaibeom.github.io/programming/golang/</loc>
+    <lastmod>1111-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>

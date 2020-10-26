@@ -15,7 +15,7 @@
       
       <guid>https://duaibeom.github.io/computer/ssh/</guid>
       <description>ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &amp;lt;someonePC&amp;gt;는 ~/.ssh/id_rsa.pub가 &amp;lt;someonePC&amp;gt;:~/.ssh/authorized_keys에 추가가 된다.
-ssh forwarding </description>
+ssh forwarding config Host SomeonePC Hostname 192.</description>
     </item>
     
     <item>
@@ -44,7 +44,9 @@ array jobs #SBATCH -J ARRAY_JOB #SBATCH --cpus-per-task=4 # job 당 core 개수 
       <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://duaibeom.github.io/computer/vim_manual/</guid>
-      <description>Vim Manual ^]: jump to the function definition ^[: same ESC</description>
+      <description>Vim Manual ^]: jump to the function definition ^[: same ESC
+cw
+c</description>
     </item>
     
     <item>

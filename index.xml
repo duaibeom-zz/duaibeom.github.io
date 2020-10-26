@@ -7,14 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 06 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VS Code</title>
+      <link>https://duaibeom.github.io/programming/vscode/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/programming/vscode/</guid>
+      <description>VS Code option { &amp;#34;editor.suggestSelection&amp;#34;: &amp;#34;first&amp;#34;, &amp;#34;vsintellicode.modify.editor.suggestSelection&amp;#34;: &amp;#34;automaticallyOverrodeDefaultValue&amp;#34;, &amp;#34;python.languageServer&amp;#34;: &amp;#34;Pylance&amp;#34;, &amp;#34;git.ignoreLegacyWarning&amp;#34;: true, &amp;#34;python.linting.enabled&amp;#34;: true, &amp;#34;python.linting.flake8Enabled&amp;#34;: true, &amp;#34;python.linting.flake8Args&amp;#34;: [ &amp;#34;--ignore=E203&amp;#34;, // 천천히 확인 // &amp;#34;--ignore=E266&amp;#34;, &amp;#34;--ignore=E501&amp;#34;, &amp;#34;--ignore=W503&amp;#34;, // &amp;#34;--max-line-length=80&amp;#34;, // &amp;#34;--select = B,C,E,F,W,T4,B9&amp;#34;, &amp;#34;--select = B,C,E,F,W,B950&amp;#34;, &amp;#34;--max-complexity = 18&amp;#34; ], &amp;#34;editor.</description>
+    </item>
+    
     <item>
       <title>NUMPY note</title>
-      <link>https://duaibeom.github.io/python/numpy/</link>
+      <link>https://duaibeom.github.io/programming/numpy/</link>
       <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/python/numpy/</guid>
-      <description>&amp;gt;&amp;gt;&amp;gt; a = numpy.array([0, 3, 0, 1, 0, 1, 2, 1, 0, 0, 0, 0, 1, 3, 4]) &amp;gt;&amp;gt;&amp;gt; unique, counts = numpy.</description>
+      <guid>https://duaibeom.github.io/programming/numpy/</guid>
+      <description>NUMPY np 자리수 조절 print(U) &amp;gt; [ 3.40948761e-01 0.00000000e+00 -1.20516241e-01 -3.88578059e-16 -9.32324946e-01 -1.11022302e-16 -2.42574685e-17] np.set_printoptions(precision=2) # global with np.printoptions(precision=2, suppress=True): # local print(U) &amp;gt; [ 0.</description>
     </item>
     
     <item>
@@ -24,15 +33,15 @@
       
       <guid>https://duaibeom.github.io/computer/ssh/</guid>
       <description>ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &amp;lt;someonePC&amp;gt;는 ~/.ssh/id_rsa.pub가 &amp;lt;someonePC&amp;gt;:~/.ssh/authorized_keys에 추가가 된다.
-ssh forwarding </description>
+ssh forwarding config Host SomeonePC Hostname 192.</description>
     </item>
     
     <item>
       <title>Fingerprint (Chemistry)</title>
-      <link>https://duaibeom.github.io/python/fingerprint/</link>
+      <link>https://duaibeom.github.io/programming/fingerprint/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/python/fingerprint/</guid>
+      <guid>https://duaibeom.github.io/programming/fingerprint/</guid>
       <description>Extended Connectivity Fingerprint (ECFP) family https://docs.chemaxon.com/display/docs/Extended+Connectivity+Fingerprint+ECFP
 https://www.rdkit.org/docs/GettingStartedInPython.html#morgan-fingerprints-circular-fingerprints
 Morgan fingerprint(Circular Fingerprints): Fingerprints based on the Morgan algorithm, similar to the ECFP/FCFP fingerprints; J.</description>
@@ -50,19 +59,19 @@ Morgan fingerprint(Circular Fingerprints): Fingerprints based on the Morgan algo
     
     <item>
       <title>Utils</title>
-      <link>https://duaibeom.github.io/python/utils/</link>
+      <link>https://duaibeom.github.io/programming/utils/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/python/utils/</guid>
+      <guid>https://duaibeom.github.io/programming/utils/</guid>
       <description>time module perf_counter() and process_time() - https://stackoverflow.com/q/25785243/10103236</description>
     </item>
     
     <item>
       <title>Jupyter Notebook</title>
-      <link>https://duaibeom.github.io/python/jupyter_notebook/</link>
+      <link>https://duaibeom.github.io/programming/jupyter_notebook/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/python/jupyter_notebook/</guid>
+      <guid>https://duaibeom.github.io/programming/jupyter_notebook/</guid>
       <description>Jupyter notebook Sever  via ssh via config  via config   config 파일 생성 jupyter notebook --generate-config
   password 설정</description>
     </item>
@@ -102,7 +111,9 @@ array jobs #SBATCH -J ARRAY_JOB #SBATCH --cpus-per-task=4 # job 당 core 개수 
       <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://duaibeom.github.io/computer/vim_manual/</guid>
-      <description>Vim Manual ^]: jump to the function definition ^[: same ESC</description>
+      <description>Vim Manual ^]: jump to the function definition ^[: same ESC
+cw
+c</description>
     </item>
     
     <item>
@@ -117,10 +128,10 @@ array jobs #SBATCH -J ARRAY_JOB #SBATCH --cpus-per-task=4 # job 당 core 개수 
     
     <item>
       <title>pytesseract</title>
-      <link>https://duaibeom.github.io/python/pytesseract/</link>
+      <link>https://duaibeom.github.io/programming/pytesseract/</link>
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/python/pytesseract/</guid>
+      <guid>https://duaibeom.github.io/programming/pytesseract/</guid>
       <description>Project description Python-tesseract is an optical character recognition (OCR) tool for python. That is, it will recognize and “read” the text embedded in images.</description>
     </item>
     
@@ -139,19 +150,19 @@ CS230 - CS230: Deep Learning | Autumn 2018 Site &amp;amp; NoteVideo</description
     
     <item>
       <title>Pillow (PIL Fork)</title>
-      <link>https://duaibeom.github.io/python/pillow/</link>
+      <link>https://duaibeom.github.io/programming/pillow/</link>
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/python/pillow/</guid>
+      <guid>https://duaibeom.github.io/programming/pillow/</guid>
       <description>gg</description>
     </item>
     
     <item>
       <title>Plot</title>
-      <link>https://duaibeom.github.io/python/plot/</link>
+      <link>https://duaibeom.github.io/programming/plot/</link>
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/python/plot/</guid>
+      <guid>https://duaibeom.github.io/programming/plot/</guid>
       <description>Matplotlib 사용법 저장 Cheatsheets
 How-to
 rcParams
@@ -160,10 +171,10 @@ rcParams
     
     <item>
       <title>정규화 표현식(Regular Expression)</title>
-      <link>https://duaibeom.github.io/python/regexp/</link>
+      <link>https://duaibeom.github.io/programming/regexp/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/python/regexp/</guid>
+      <guid>https://duaibeom.github.io/programming/regexp/</guid>
       <description>wikipedia_kr
 반복 관련 메타 문자 * 0회
 + 1회
@@ -195,26 +206,25 @@ rcParams
     
     <item>
       <title>Python3</title>
-      <link>https://duaibeom.github.io/python/python3/</link>
+      <link>https://duaibeom.github.io/programming/python3/</link>
       <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/python/python3/</guid>
+      <guid>https://duaibeom.github.io/programming/python3/</guid>
       <description>PYTHON3 NOTE char.isdigit()
 char.isupper()
 char.islower()
 print(float(&#39;&#39;.join(filter(str.isdigit, x))))
 Extract number from a string
 SomeStr.endswith((&#39;multiple&#39;, &#39;suffixes&#39;))
-@ staticmethod https://stackoverflow.com/a/1669524
-가상환경 만들기 가상 환경의 장점은</description>
+  List a = [1,1,2,2,1,1]</description>
     </item>
     
     <item>
       <title>Rdkit note</title>
-      <link>https://duaibeom.github.io/python/rdkit/</link>
+      <link>https://duaibeom.github.io/programming/rdkit/</link>
       <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/python/rdkit/</guid>
+      <guid>https://duaibeom.github.io/programming/rdkit/</guid>
       <description>Conda 를 이용한 rdkit 설치. RDKIT을 콘다를 이용하지 않고, 설치하는 방법은 매우 어렵다. (lib 문제로 설치가 어렵다.)
 마음 편하게 anaconda3를 이용해 설치를 하자.</description>
     </item>
@@ -260,21 +270,21 @@ NAND flash: Not AND gate를 이용한 flash memory, 연속 읽기쓰기가 빠�
     </item>
     
     <item>
-      <title></title>
-      <link>https://duaibeom.github.io/flutter/doodle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Dart</title>
+      <link>https://duaibeom.github.io/programming/dart/</link>
+      <pubDate>Sat, 11 Nov 1111 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/flutter/doodle/</guid>
-      <description> </description>
+      <guid>https://duaibeom.github.io/programming/dart/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://duaibeom.github.io/go/doodle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Go</title>
+      <link>https://duaibeom.github.io/programming/golang/</link>
+      <pubDate>Sat, 11 Nov 1111 00:00:00 +0000</pubDate>
       
-      <guid>https://duaibeom.github.io/go/doodle/</guid>
-      <description> </description>
+      <guid>https://duaibeom.github.io/programming/golang/</guid>
+      <description></description>
     </item>
     
   </channel>
