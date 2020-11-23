@@ -4,12 +4,27 @@
   
   <url>
     <loc>https://duaibeom.github.io/</loc>
-    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/programming/flutter/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://duaibeom.github.io/programming/</loc>
-    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/ml/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/ml/pytorch/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -89,11 +104,6 @@
   
   <url>
     <loc>https://duaibeom.github.io/ml/mllecture/</loc>
-    <lastmod>2020-01-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/ml/</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   

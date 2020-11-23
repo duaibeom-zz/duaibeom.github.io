@@ -113,7 +113,16 @@ Extract number from a string</p>
 <span style="color:#40a070">1</span> <span style="color:#40a070">2</span> <span style="color:#40a070">3</span>
 <span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#007020">dict</span>(<span style="color:#666">**</span>{<span style="color:#4070a0">&#39;x&#39;</span>: <span style="color:#40a070">1</span>}, y<span style="color:#666">=</span><span style="color:#40a070">2</span>, <span style="color:#666">**</span>{<span style="color:#4070a0">&#39;z&#39;</span>: <span style="color:#40a070">3</span>})
 {<span style="color:#4070a0">&#39;x&#39;</span>: <span style="color:#40a070">1</span>, <span style="color:#4070a0">&#39;y&#39;</span>: <span style="color:#40a070">2</span>, <span style="color:#4070a0">&#39;z&#39;</span>: <span style="color:#40a070">3</span>}
-</code></pre></div><h4 id="-staticmethod">@ staticmethod</h4>
+</code></pre></div><h2 id="iteraion">Iteraion</h2>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> a:
+<span style="color:#666">...</span>     <span style="color:#007020;font-weight:bold">if</span> a[i] <span style="color:#666">==</span> <span style="color:#40a070">1</span>:
+<span style="color:#666">...</span>         <span style="color:#007020;font-weight:bold">del</span> a[i]
+<span style="color:#666">...</span> 
+Traceback (most recent call last):
+  File <span style="color:#4070a0">&#34;&lt;stdin&gt;&#34;</span>, line <span style="color:#40a070">1</span>, <span style="color:#007020;font-weight:bold">in</span> <span style="color:#666">&lt;</span>module<span style="color:#666">&gt;</span>
+<span style="color:#007020">RuntimeError</span>: dictionary changed size during iteration
+</code></pre></div><p>당연하게도 iteration 중에는 iteration 대상인 dictionary 변경이 불가하다. 다른 대상은 가능한 것 같다.</p>
+<h4 id="-staticmethod">@ staticmethod</h4>
 <p><a href="https://stackoverflow.com/a/1669524">https://stackoverflow.com/a/1669524</a></p>
 <h3 id="가상환경-만들기">가상환경 만들기</h3>
 <p>가상 환경의 장점은</p>
@@ -181,9 +190,11 @@ sudo apt install python3.&lt;version&gt; python3.&lt;version&gt;-venv
 parser <span style="color:#666">=</span> argparse<span style="color:#666">.</span>ArgumentParser()
 parser<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">&#39;--foo&#39;</span>, help<span style="color:#666">=</span><span style="color:#4070a0">&#39;foo help&#39;</span>)
 args <span style="color:#666">=</span> parser<span style="color:#666">.</span>parse_args()
-</code></pre></div><blockquote>
-<p>ArgumentParser.<strong>add_argument</strong>(name or flags&hellip;[, action][, nargs][, const][, default][, type][, choices][, required][, help][, metavar][, dest])<br>
-<code>name or flags</code> - 옵션 문자열의 이름이나 리스트, 예를 들어 foo 또는 -f, &ndash;foo.<br>
+</code></pre></div><ul>
+<li>ArgumentParser.<strong>add_argument</strong>(name or flags&hellip;[, action][, nargs][, const][, default][, type][, choices][, required][, help][, metavar][, dest])</li>
+</ul>
+<blockquote>
+<p><code>name or flags</code> - 옵션 문자열의 이름이나 리스트, 예를 들어 foo 또는 -f, &ndash;foo.<br>
 <code>action</code> - 명령행에서 이 인자가 발견될 때 수행 할 액션의 기본형.<br>
 <code>nargs</code> - 소비되어야 하는 명령행 인자의 수.<br>
 <code>const</code> - 일부 action 및 nargs 를 선택할 때 필요한 상숫값.<br>
@@ -203,7 +214,18 @@ parser<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">
 parser<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">&#34;y&#34;</span>, <span style="color:#007020">type</span><span style="color:#666">=</span><span style="color:#007020">int</span>, help<span style="color:#666">=</span><span style="color:#4070a0">&#34;the exponent&#34;</span>)
 args <span style="color:#666">=</span> parser<span style="color:#666">.</span>parse_args()
 </code></pre></div><p>충돌하는 옵션은 그룹으로 묶어 사용한다.</p>
-<h2 id="pandas">Pandas</h2>
+<ul>
+<li><code>dest</code></li>
+</ul>
+<p>선택 인자 액션의 경우, <code>dest</code> 의 값은 보통 옵션 문자열에서 유추됩니다. ArgumentParser 는 첫 번째 긴 옵션 문자열을 취하고 앞의 <code>--</code> 문자열을 제거하여 <code>dest</code> 의 값을 만듭니다. 긴 옵션 문자열이 제공되지 않았다면 <code>dest</code> 는 첫 번째 짧은 옵션 문자열에서 앞의 <code>-</code> 문자를 제거하여 만듭니다. 문자열이 항상 유효한 어트리뷰트 이름이 되도록 만들기 위해 중간에 나오는 <code>-</code> 문자는 <code>_</code> 문자로 변환됩니다. 아래 예제는 이 동작을 보여줍니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">&gt;&gt;&gt;</span> parser <span style="color:#666">=</span> argparse<span style="color:#666">.</span>ArgumentParser()
+<span style="color:#666">&gt;&gt;&gt;</span> parser<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">&#39;-f&#39;</span>, <span style="color:#4070a0">&#39;--foo-bar&#39;</span>, <span style="color:#4070a0">&#39;--foo&#39;</span>)
+<span style="color:#666">&gt;&gt;&gt;</span> parser<span style="color:#666">.</span>add_argument(<span style="color:#4070a0">&#39;-x&#39;</span>, <span style="color:#4070a0">&#39;-y&#39;</span>)
+<span style="color:#666">&gt;&gt;&gt;</span> parser<span style="color:#666">.</span>parse_args(<span style="color:#4070a0">&#39;-f 1 -x 2&#39;</span><span style="color:#666">.</span>split())
+Namespace(foo_bar<span style="color:#666">=</span><span style="color:#4070a0">&#39;1&#39;</span>, x<span style="color:#666">=</span><span style="color:#4070a0">&#39;2&#39;</span>)
+<span style="color:#666">&gt;&gt;&gt;</span> parser<span style="color:#666">.</span>parse_args(<span style="color:#4070a0">&#39;--foo 1 -y 2&#39;</span><span style="color:#666">.</span>split())
+Namespace(foo_bar<span style="color:#666">=</span><span style="color:#4070a0">&#39;1&#39;</span>, x<span style="color:#666">=</span><span style="color:#4070a0">&#39;2&#39;</span>)
+</code></pre></div><h2 id="pandas">Pandas</h2>
 <blockquote>
 <p>DataFrame.<strong>sort_values</strong>(self, by, axis=0, ascending=True, inplace=False, kind=&lsquo;quicksort&rsquo;, na_position=&lsquo;last&rsquo;)<!-- raw HTML omitted -->Sort by the values along either axis.</p>
 </blockquote>

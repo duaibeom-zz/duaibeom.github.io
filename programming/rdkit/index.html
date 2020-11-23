@@ -92,7 +92,8 @@
 </blockquote>
 <p><code>conda create -n rdkit_venv python=3.7</code>을 이용해 rdkit 설치를 위한 가상환경을 만든다.</p>
 <p>생성 후에 <code>conda activate rdkit_venv</code>로 <strong>rdkit_venv</strong>를 활성화 해주자.</p>
-<p><code>conda install -c rdkit rdkit</code>로 rdkit을 설치.</p>
+<p>~<code>conda install -c rdkit rdkit</code>로 rdkit을 설치.~  # rdkit 채널은 python version 3.7 이 최대이다.<br>
+<code>conda install -c conda-forge rdkit</code>로 rdkit을 설치.</p>
 <p>끝.</p>
 <p>PS. <code>anconda3/envs/rdkit_venv</code> dir를 복사하여 그대로 사용할 수 있다. 다른 OS상에서는 약간의 문제가 발생한다.</p>
 <h3 id="smilesmolsupplierhttpswwwrdkitorgdocssourcerdkitchemrdmolfileshtmlrdkitchemrdmolfilessmilesmolsupplier"><a href="https://www.rdkit.org/docs/source/rdkit.Chem.rdmolfiles.html#rdkit.Chem.rdmolfiles.SmilesMolSupplier">SmilesMolSupplier</a></h3>
