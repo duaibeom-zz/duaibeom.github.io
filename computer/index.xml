@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/computer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IPMI</title>
+      <link>https://duaibeom.github.io/computer/ipmitool/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/computer/ipmitool/</guid>
+      <description>IPMITOOL IPMI interface  https://serverfault.com/a/362019  Dedicated: Always use the dedicated IPMI interface. This is the option you want if you&amp;rsquo;re trying to have the simplest setup, at the expense of additional cabling.</description>
+    </item>
+    
     <item>
       <title>SSH</title>
       <link>https://duaibeom.github.io/computer/ssh/</link>
@@ -15,7 +24,7 @@
       
       <guid>https://duaibeom.github.io/computer/ssh/</guid>
       <description>ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &amp;lt;someonePC&amp;gt;는 ~/.ssh/id_rsa.pub가 &amp;lt;someonePC&amp;gt;:~/.ssh/authorized_keys에 추가가 된다.
-ssh forwarding config Host SomeonePC Hostname 192.</description>
+Github check ssh -T git@github.com -i ~/.</description>
     </item>
     
     <item>

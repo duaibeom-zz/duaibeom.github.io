@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>SSH - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="SSH" />
 <meta property="og:description" content="ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &lt;someonePC&gt;는 ~/.ssh/id_rsa.pub가 &lt;someonePC&gt;:~/.ssh/authorized_keys에 추가가 된다.
-ssh forwarding config Host SomeonePC Hostname 192." />
+Github check ssh -T git@github.com -i ~/." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://duaibeom.github.io/computer/ssh/" />
 <meta property="article:published_time" content="2020-07-26T00:00:00+00:00" />
@@ -13,7 +13,7 @@ ssh forwarding config Host SomeonePC Hostname 192." />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SSH"/>
 <meta name="twitter:description" content="ssh ssh-keygen -p -f ~/.ssh/id_rsa passphrase를 변경할 수 있다. ssh-copy-id &lt;someonePC&gt;는 ~/.ssh/id_rsa.pub가 &lt;someonePC&gt;:~/.ssh/authorized_keys에 추가가 된다.
-ssh forwarding config Host SomeonePC Hostname 192."/>
+Github check ssh -T git@github.com -i ~/."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/normalize.css" />
@@ -83,6 +83,9 @@ ssh forwarding config Host SomeonePC Hostname 192."/>
 			<h2 id="ssh">ssh</h2>
 <p><code>ssh-keygen -p -f ~/.ssh/id_rsa</code> passphrase를 변경할 수 있다.
 <code>ssh-copy-id &lt;someonePC&gt;</code>는 <code>~/.ssh/id_rsa.pub</code>가 <code>&lt;someonePC&gt;:~/.ssh/authorized_keys</code>에 추가가 된다.</p>
+<h2 id="github-check">Github check</h2>
+<p><code>ssh -T git@github.com -i ~/.ssh/&lt;your_id_rsa&gt;</code><br>
+위 방법을 통해 어느 PubKey가 어느 계정에 사용되는지 확인이 가능하다.</p>
 <h2 id="ssh-forwarding">ssh forwarding</h2>
 <h2 id="config">config</h2>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">Host SomeonePC

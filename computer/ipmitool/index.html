@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>IPMI - Beom&#39;s Doodle</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="IPMI" />
+<meta property="og:description" content="IPMITOOL IPMI interface  https://serverfault.com/a/362019  Dedicated: Always use the dedicated IPMI interface. This is the option you want if you&rsquo;re trying to have the simplest setup, at the expense of additional cabling." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://duaibeom.github.io/computer/ipmitool/" />
+<meta property="article:published_time" content="2020-11-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-29T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="IPMI"/>
+<meta name="twitter:description" content="IPMITOOL IPMI interface  https://serverfault.com/a/362019  Dedicated: Always use the dedicated IPMI interface. This is the option you want if you&rsquo;re trying to have the simplest setup, at the expense of additional cabling."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://duaibeom.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://duaibeom.github.io/css/custom.css" />
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://duaibeom.github.io/js/main.js"></script>
+	<script src="https://duaibeom.github.io/js/abc.js"></script>
+	<script src="https://duaibeom.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://duaibeom.github.io/">
+	<h1 class="site-title"><a href="https://duaibeom.github.io/">Beom&#39;s Doodle</a></h1>
+	<div class="site-description"><h2>Chemistry | Computer | What is next?</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/duaibeom" title="Github"><i data-feather="github"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">posts</a>
+			</li>
+			
+			<li>
+				<a href="/computer">Computer</a>
+			</li>
+			
+			<li>
+				<a href="/programming">Programming</a>
+			</li>
+			
+			<li>
+				<a href="/ml">Machine Learning</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">IPMI</h1>
+			<div class="meta">Posted at &mdash; Nov 29, 2020</div>
+		</div>
+
+		<div class="markdown">
+			<h2 id="ipmitool">IPMITOOL</h2>
+<h3 id="ipmi-interface">IPMI interface</h3>
+<ul>
+<li><a href="https://serverfault.com/a/362019">https://serverfault.com/a/362019</a></li>
+</ul>
+<p><strong>Dedicated</strong>: Always use the dedicated IPMI interface. This is the option you want if you&rsquo;re trying to have the simplest setup, at the expense of additional cabling.</p>
+<p><strong>Shared</strong>: Always use the LAN1 interface. This is the option you want if you&rsquo;re trying to reduce your cabling to each server, and understand the tradeoffs. Under the covers, there&rsquo;s a virtual switch in hardware that&rsquo;s splitting out traffic to the IPMI card from traffic to the rest of the system; the IPMI card has a separate MAC address to differentiate the traffic. On modern Supermicro boards, you can also set the IPMI traffic to run on a different VLAN from the rest of the system, so you can tag the IPMI traffic. There are some definite security implication to this design; it&rsquo;s not difficult for the main system to access the IPMI network, if you were trying to keep them separated. A failure of the LAN1 interface often means that you lose primary and out-of-band connectivity at the same time.</p>
+<p><strong>Failover</strong> (factory default): On boot, detect if the dedicated IPMI interface is connected. If so, use the dedicated interface, otherwise fall back to the shared LAN1. I&rsquo;ve never found a good use for this option. As best I can tell, this setup is fundamentally flawed - I haven&rsquo;t tested it extensively, but I&rsquo;ve heard reports it&rsquo;ll fail to detect the dedicated interface in many circumstances because the upstream switch isn&rsquo;t passing traffic - for example, after a power outage if the switch and system come up simultaneously, or if the switch is still blocking during the spanning tree detection. Combine this with the fact that the check only happens at boot, and it&rsquo;s just generally hard to control what interface you end up using.</p>
+<p>한줄 요약: Hub LAN port와 케이블이 충분하면 <strong>Dedicated</strong>를 사용하고, 효율적으로 사용을 원하면 <strong>Shared</strong>를 사용하면 된다.</p>
+<ul>
+<li><a href="https://serverfault.com/a/677087">https://serverfault.com/a/677087</a></li>
+</ul>
+<p>The following raw commands will surely prove useful to the next person who reads this topic. I got these directly from Supermicro support. Cheers:</p>
+<p>To get LAN mode: <code>ipmitool raw 0x30 0x70 0x0c 0</code>.</p>
+<p>To set LAN mode dedicated: <code>ipmitool raw 0x30 0x70 0x0c 1 0</code>.</p>
+<p>To set LAN mode onboard/shared: <code>ipmitool raw 0x30 0x70 0x0c 1 1</code>.</p>
+<p>To set LAN mode failover: <code>ipmitool raw 0x30 0x70 0x0c 1 2</code>.</p>
+<p>These raw values will also work with <code>ipmicfg</code> (just remember to use <code>-raw</code> instead of <code>raw</code>).</p>
+<p>After setting the required LAN mode, do not forget to do a hard reboot.</p>
+<h3 id="user-setting">User setting</h3>
+<p>TODO</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'duaibeom-github-io';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+</body>
+</html>
