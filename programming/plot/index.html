@@ -129,6 +129,16 @@ fig<span style="color:#666">.</span>tight_layout()
 <span style="color:#40a070">7</span>
 <span style="color:#666">&gt;&gt;&gt;</span> np<span style="color:#666">.</span>count_nonzero(y <span style="color:#666">==</span> <span style="color:#40a070">3</span>)
 <span style="color:#40a070">3</span>
+</code></pre></div><h3 id="tips">Tips</h3>
+<h4 id="regression-line">regression line</h4>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">from numpy.polynomial.polynomial import polyfit
+
+# Fit with polyfit
+b, m = polyfit(x, y, 1)
+
+plt.plot(x, y, &#39;.&#39;)
+plt.plot(x, b + m * x, &#39;-&#39;)
+plt.show()
 </code></pre></div>
 		</div>
 
