@@ -89,6 +89,13 @@ array jobs #SBATCH -J ARRAY_JOB #SBATCH --cpus-per-task=4 # job 당 core 개수 
 <span style="color:#bb60d5">LS_</span><span style="color:#666">=(</span><span style="color:#4070a0">`</span>ls *.job<span style="color:#4070a0">`</span><span style="color:#666">)</span>
 
 srun g16 <span style="color:#70a0d0;font-style:italic">${</span><span style="color:#bb60d5">LS_</span>[<span style="color:#bb60d5">$SLURM_ARRAY_TASK_ID</span>]<span style="color:#70a0d0;font-style:italic">}</span>
+</code></pre></div><h3 id="install-slurmtop-in-ubuntu">Install slurmtop in Ubuntu</h3>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo apt install libslurm34 libswitch-perl libcurses-perl libslurm-perl
+tar xzf schedtop-5.02.tar.gz
+cd schedtop
+perl Makefile.PL slurmtop
+make
+sudo make install
 </code></pre></div>
 		</div>
 

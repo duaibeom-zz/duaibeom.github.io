@@ -108,8 +108,7 @@ Extract number from a string</p>
 </li>
 </ul>
 <p><code>* iterable unpacking operator</code><br>
-<code>** dictionary unpacking operators</code>
-<code>The unary ~ (invert) operator yields the bitwise inversion of its integer argument.</code></p>
+<code>** dictionary unpacking operators</code></p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#007020;font-weight:bold">print</span>(<span style="color:#666">*</span>[<span style="color:#40a070">1</span>], <span style="color:#666">*</span>[<span style="color:#40a070">2</span>], <span style="color:#40a070">3</span>)
 <span style="color:#40a070">1</span> <span style="color:#40a070">2</span> <span style="color:#40a070">3</span>
 <span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#007020">dict</span>(<span style="color:#666">**</span>{<span style="color:#4070a0">&#39;x&#39;</span>: <span style="color:#40a070">1</span>}, y<span style="color:#666">=</span><span style="color:#40a070">2</span>, <span style="color:#666">**</span>{<span style="color:#4070a0">&#39;z&#39;</span>: <span style="color:#40a070">3</span>})
@@ -239,31 +238,7 @@ Namespace(foo_bar<span style="color:#666">=</span><span style="color:#4070a0">&#
 <span style="color:#40a070">0</span>   A    <span style="color:#40a070">2</span>    <span style="color:#40a070">0</span>
 <span style="color:#40a070">1</span>   A    <span style="color:#40a070">1</span>    <span style="color:#40a070">1</span>
 </code></pre></div><p>ascending: 오르는, 상승하는 (ant. descending)</p>
-<h3 id="time">Time</h3>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># timer.py
-import time
-class TimerError(Exception):
-    &#34;&#34;&#34;A custom exception used to report errors in use of Timer class&#34;&#34;&#34;
 
-class Timer:
-    def __init__(self):
-        self._start_time = None
-
-    def start(self):
-        &#34;&#34;&#34;Start a new timer&#34;&#34;&#34;
-        if self._start_time is not None:
-            raise TimerError(f&#34;Timer is running. Use .stop() to stop it&#34;)
-
-        self._start_time = time.perf_counter()
-    def stop(self):
-        &#34;&#34;&#34;Stop the timer, and report the elapsed time&#34;&#34;&#34;
-        if self._start_time is None:
-            raise TimerError(f&#34;Timer is not running. Use .start() to start it&#34;)
-
-        elapsed_time = time.perf_counter() - self._start_time
-        self._start_time = None
-        print(f&#34;Elapsed time: {elapsed_time:0.4f} seconds&#34;)
-</code></pre></div>
 		</div>
 
 		<div class="post-tags">
