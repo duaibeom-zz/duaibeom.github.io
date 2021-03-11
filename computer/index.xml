@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/computer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GRUB 설정</title>
+      <link>https://duaibeom.github.io/computer/grub/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/computer/grub/</guid>
+      <description>GRUB에 이전에 설치된 OS 정보가 남아 있다면, sudo update-grub으로 현재 상태를 적용한다.
+해상도가 너무 높다면, /etc/default/grub에서 변경한다.
+GRUB_GFXMODE=1280x720 # 16:9 </description>
+    </item>
+    
     <item>
       <title>IPMI</title>
       <link>https://duaibeom.github.io/computer/ipmitool/</link>
