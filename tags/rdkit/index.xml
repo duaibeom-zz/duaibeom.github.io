@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rdkit on Beom&#39;s Doodle</title>
+    <link>https://duaibeom.github.io/tags/rdkit/</link>
+    <description>Recent content in rdkit on Beom&#39;s Doodle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 28 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/tags/rdkit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RDKit Installation</title>
+      <link>https://duaibeom.github.io/posts/rdkit/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/rdkit/</guid>
+      <description>Conda 를 이용한 rdkit 설치. RDKIT을 콘다를 이용하지 않고, 설치하는 방법은 매우 어렵다. (lib 문제로 설치가 어렵다.)
+마음 편하게 anaconda3를 이용해 설치를 하자.
+Anaconda3 설치 방법 CentOS 7.7 에서 진행했다.
+bash Anaconda3-2019.10-Linux-x86_64.sh로 설치를 시작한다.
+conda init을 하지 않으면 venv 생성이 어렵다. 해주는 것이 좋다.
+ 문제는 하게 되면 기본으로 anaconda3 환경을 사용하게 된다.이것이 싫다면 conda config --set auto_activate_base false 해주자.
+ conda create -n rdkit_venv python=3.7을 이용해 rdkit 설치를 위한 가상환경을 만든다.</description>
+    </item>
+    
+  </channel>
+</rss>

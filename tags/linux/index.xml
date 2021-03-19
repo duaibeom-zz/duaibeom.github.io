@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Beom&#39;s Doodle</title>
+    <link>https://duaibeom.github.io/tags/linux/</link>
+    <description>Recent content in linux on Beom&#39;s Doodle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 16 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GRUB</title>
+      <link>https://duaibeom.github.io/posts/grub/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/grub/</guid>
+      <description>grub의 기본 설정 /etc/default/grub Grub 설정은 여기에서 하면 된다.
+# /etc/default/grub GRUB_DEFAULT=0 # grub 메뉴에서 0번째에 해당하는 것을 기본으로한다. GRUB_TIMEOUT_STYLE=menu # hidden:메뉴가 출력되지 않는다. menu:메뉴가 출력된다. GRUB_TIMEOUT=10 # grub이 출력되는 시간을 정한다. 해당 시간동안 입력이 없으면 grub_default를 이용한다. GRUB_DISTRIBUTOR=`lsb_release -i -s 2&amp;gt; /dev/null || echo Debian` GRUB_CMDLINE_LINUX_DEFAULT=&amp;#34;quiet splash&amp;#34; GRUB_CMDLINE_LINUX=&amp;#34;&amp;#34; GRUB_GFXMODE=1280x720 # 기본 해상도가 너무 높아 버벅 거린다면 해상도를 낮추는 것이 좋다. 설정 후 반드시 sudo update-grub 을 통해 적용을 해야한다.</description>
+    </item>
+    
+  </channel>
+</rss>

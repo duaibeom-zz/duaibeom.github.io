@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Beom&#39;s Doodle</title>
+    <link>https://duaibeom.github.io/categories/python/</link>
+    <description>Recent content in python on Beom&#39;s Doodle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pytorch</title>
+      <link>https://duaibeom.github.io/posts/pytorch/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/pytorch/</guid>
+      <description>PYTORCH  cat and stack  &amp;gt;&amp;gt;&amp;gt; a = torch.randn([2, 3]) tensor([[ 0.0115, 0.9966, -0.6768], [ 2.2879, 0.6915, 0.4793]]) &amp;gt;&amp;gt;&amp;gt; b = torch.randn([2, 3]) tensor([[ 1.4057, 0.8495, -0.4715], [-0.2320, 1.9549, 0.8351]]) &amp;gt;&amp;gt;&amp;gt; torch.cat([a, b]) tensor([[ 0.0115, 0.9966, -0.6768], [ 2.2879, 0.6915, 0.4793], [ 1.4057, 0.8495, -0.4715], [-0.2320, 1.9549, 0.8351]]) # shape: torch.Size([4, 3]) &amp;gt;&amp;gt;&amp;gt; torch.stack([a, b]) tensor([[[ 0.0115, 0.9966, -0.6768], [ 2.2879, 0.6915, 0.4793]], [[ 1.4057, 0.8495, -0.4715], [-0.2320, 1.9549, 0.</description>
+    </item>
+    
+    <item>
+      <title>NUMPY note</title>
+      <link>https://duaibeom.github.io/posts/numpy/</link>
+      <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/numpy/</guid>
+      <description>NUMPY np 자리수 조절 print(U) &amp;gt; [ 3.40948761e-01 0.00000000e+00 -1.20516241e-01 -3.88578059e-16 -9.32324946e-01 -1.11022302e-16 -2.42574685e-17] np.set_printoptions(precision=2) # global with np.printoptions(precision=2, suppress=True): # local print(U) &amp;gt; [ 0.34 0. -0.12 -0. -0.93 -0. -0. ] &amp;#39;suppress&amp;#39; about scientific notation &amp;gt; If True, always print floating point numbers using fixed point notation U[U &amp;lt; 0] = 0 &amp;gt; [0.34 0. 0. 0. 0. 0. 0. ] FILE total line number check q = &amp;#39;wc smiles_100000.</description>
+    </item>
+    
+    <item>
+      <title>Fingerprint (Chemistry)</title>
+      <link>https://duaibeom.github.io/posts/fingerprint/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/fingerprint/</guid>
+      <description>Extended Connectivity Fingerprint (ECFP) family https://docs.chemaxon.com/display/docs/Extended+Connectivity+Fingerprint+ECFP
+https://www.rdkit.org/docs/GettingStartedInPython.html#morgan-fingerprints-circular-fingerprints
+Morgan fingerprint(Circular Fingerprints): Fingerprints based on the Morgan algorithm, similar to the ECFP/FCFP fingerprints; J. Chem. Inf. and Model. 50:742-54 (2010).</description>
+    </item>
+    
+    <item>
+      <title>Utils</title>
+      <link>https://duaibeom.github.io/posts/utils/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/utils/</guid>
+      <description>time module perf_counter() and process_time() - https://stackoverflow.com/q/25785243/10103236</description>
+    </item>
+    
+    <item>
+      <title>Jupyter Notebook</title>
+      <link>https://duaibeom.github.io/posts/jupyter_notebook/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/jupyter_notebook/</guid>
+      <description>Jupyter notebook Sever  via ssh via config  via config   config 파일 생성 jupyter notebook --generate-config
+  password 설정
+  jupyter notebook password Enter password: **** Verify password: **** [NotebookPasswordApp] Wrote hashed password to /Users/you/.jupyter/jupyter_notebook_config.json jupyter_notebook_config.json에 있는 hash password 를 /Users/you/.jupyter/jupyter_notebook_config.py에 넣기.
+ c.NotebookApp.password = u&#39;sha1: ~ &#39;
+  config 파일 설정  c.NotebookApp.allow_origin = &#39;192.168.0.0&#39; 접속가능한 IP 설정.
+c.NotebookApp.ip = &#39;192.168.0.???&#39; 해당 노드의 IP 입력.</description>
+    </item>
+    
+    <item>
+      <title>pytesseract</title>
+      <link>https://duaibeom.github.io/posts/pytesseract/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/pytesseract/</guid>
+      <description>Project description Python-tesseract is an optical character recognition (OCR) tool for python. That is, it will recognize and “read” the text embedded in images.
+Python-tesseract is a wrapper for Google’s Tesseract-OCR Engine. It is also useful as a stand-alone invocation script to tesseract, as it can read all image types supported by the Pillow and Leptonica imaging libraries, including jpeg, png, gif, bmp, tiff, and others. Additionally, if used as a script, Python-tesseract will print the recognized text instead of writing it to a file.</description>
+    </item>
+    
+    <item>
+      <title>Pillow (PIL Fork)</title>
+      <link>https://duaibeom.github.io/posts/pillow/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/pillow/</guid>
+      <description>gg</description>
+    </item>
+    
+    <item>
+      <title>Plot</title>
+      <link>https://duaibeom.github.io/posts/plot/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/plot/</guid>
+      <description>Matplotlib 사용법 저장 Cheatsheets
+How-to
+rcParams
+ matplotlib.pyplot의 hist나 seaborn의 kdeplot의 Density가 1을 넘어 나올 경우에는 Plot의 문제 보다는 data(numpy data?)가 plot package로 넘어갈 때 스케일 때문에 문제가 발생하는 것 같다. 이를 확인하기 위해 numpy.histogram을 확인하면 된다.  counts, bins = np.histogram(data, bins=100, range=(0, 1), density=True) np.sum(counts) &amp;gt;&amp;gt; 100.0 plt.plot([i*0.01 for i in range(0, 100)], counts*0.01)) np.diff()? density? or probability density? Histograms and Density Plots in Python  https://towardsdatascience.com/histograms-and-density-plots-in-python-f6bda88f5ac0  Can a probability distribution value exceeding 1 be OK?</description>
+    </item>
+    
+    <item>
+      <title>정규화 표현식(Regular Expression)</title>
+      <link>https://duaibeom.github.io/posts/regexp/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/regexp/</guid>
+      <description>wikipedia_kr
+반복 관련 메타 문자 * 0회
++ 1회
+? 0 또는 1회
+{m(, n)} m회부터 n회까지
+반복 관련 메타 문자 . 문자
+^ 처음
+$ 끝
+[] 문자 클래스
+() 하위 식 &amp;ldquo;abc¦adc&amp;rdquo; == &amp;ldquo;a(b¦d)c&amp;rdquo;
+| 선택</description>
+    </item>
+    
+    <item>
+      <title>Python3</title>
+      <link>https://duaibeom.github.io/posts/python3/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/python3/</guid>
+      <description>PYTHON3 NOTE char.isdigit()
+char.isupper()
+char.islower()
+print(float(&#39;&#39;.join(filter(str.isdigit, x))))
+Extract number from a string
+SomeStr.endswith((&#39;multiple&#39;, &#39;suffixes&#39;))
+  List a = [1,1,2,2,1,1]
+a.count(1) &amp;raquo;&amp;gt; 4
+  PEP 448 &amp;ndash; Additional Unpacking Generalizations
+  * iterable unpacking operator
+** dictionary unpacking operators The unary ~ (invert) operator yields the bitwise inversion of its integer argument.
+&amp;gt;&amp;gt;&amp;gt; print(*[1], *[2], 3) 1 2 3 &amp;gt;&amp;gt;&amp;gt; dict(**{&amp;#39;x&amp;#39;: 1}, y=2, **{&amp;#39;z&amp;#39;: 3}) {&amp;#39;x&amp;#39;: 1, &amp;#39;y&amp;#39;: 2, &amp;#39;z&amp;#39;: 3} Iteraion &amp;gt;&amp;gt;&amp;gt; for i in a: .</description>
+    </item>
+    
+  </channel>
+</rss>

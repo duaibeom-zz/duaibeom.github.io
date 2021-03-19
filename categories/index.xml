@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Beom&#39;s Doodle</title>
+    <link>https://duaibeom.github.io/categories/</link>
+    <description>Recent content in Categories on Beom&#39;s Doodle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 16 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>first</title>
+      <link>https://duaibeom.github.io/categories/first/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/first/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>note</title>
+      <link>https://duaibeom.github.io/categories/note/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/note/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://duaibeom.github.io/categories/linux/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flutter</title>
+      <link>https://duaibeom.github.io/categories/flutter/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://duaibeom.github.io/categories/python/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://duaibeom.github.io/categories/vscode/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://duaibeom.github.io/categories/blog/</link>
+      <pubDate>Wed, 18 Mar 2020 11:30:39 +0900</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine_learning</title>
+      <link>https://duaibeom.github.io/categories/machine_learning/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/machine_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cheminfomatics</title>
+      <link>https://duaibeom.github.io/categories/cheminfomatics/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/cheminfomatics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mind</title>
+      <link>https://duaibeom.github.io/categories/mind/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/mind/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer</title>
+      <link>https://duaibeom.github.io/categories/computer/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/computer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dart</title>
+      <link>https://duaibeom.github.io/categories/dart/</link>
+      <pubDate>Sat, 11 Nov 1111 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/dart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://duaibeom.github.io/categories/golang/</link>
+      <pubDate>Sat, 11 Nov 1111 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

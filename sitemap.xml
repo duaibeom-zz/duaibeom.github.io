@@ -3,87 +3,132 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://duaibeom.github.io/posts/grub/</loc>
+    <lastmod>2021-03-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/rdkit/</loc>
+    <lastmod>2019-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://duaibeom.github.io/</loc>
-    <lastmod>2021-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/computer/</loc>
-    <lastmod>2021-03-11T00:00:00+00:00</lastmod>
+    <loc>https://duaibeom.github.io/categories/</loc>
+    <lastmod>2021-03-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/computer/grub/</loc>
-    <lastmod>2021-03-11T00:00:00+00:00</lastmod>
+    <loc>https://duaibeom.github.io/categories/first/</loc>
+    <lastmod>2021-03-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/computer/ipmitool/</loc>
-    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/programming/flutter/</loc>
-    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/programming/</loc>
-    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/ml/</loc>
-    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/ml/pytorch/</loc>
-    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/programming/vscode/</loc>
-    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/programming/numpy/</loc>
-    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/computer/ssh/</loc>
-    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/programming/fingerprint/</loc>
-    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/computer/git/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/programming/utils/</loc>
-    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/programming/jupyter_notebook/</loc>
-    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://duaibeom.github.io/posts/mk_hugo/</loc>
-    <lastmod>2020-03-18T11:30:39+09:00</lastmod>
+    <loc>https://duaibeom.github.io/tags/linux/</loc>
+    <lastmod>2021-03-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://duaibeom.github.io/posts/</loc>
+    <lastmod>2021-03-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/tags/</loc>
+    <lastmod>2021-03-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/modulefiles/</loc>
+    <lastmod>2021-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/categories/note/</loc>
+    <lastmod>2021-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/ipmitool/</loc>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/categories/linux/</loc>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/categories/flutter/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/flutter/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/categories/python/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/pytorch/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/vscode/</loc>
+    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/categories/vscode/</loc>
+    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/numpy/</loc>
+    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/ssh/</loc>
+    <lastmod>2020-07-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/fingerprint/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/git/</loc>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/utils/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/jupyter_notebook/</loc>
+    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/categories/blog/</loc>
+    <lastmod>2020-03-18T11:30:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/mk_hugo/</loc>
     <lastmod>2020-03-18T11:30:39+09:00</lastmod>
   </url>
   
@@ -93,67 +138,82 @@
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/computer/slurm_manual/</loc>
+    <loc>https://duaibeom.github.io/posts/slurm_manual/</loc>
     <lastmod>2020-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/computer/vim_manual/</loc>
+    <loc>https://duaibeom.github.io/posts/vim_manual/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/computer/wake_on_lan/</loc>
+    <loc>https://duaibeom.github.io/posts/wake_on_lan/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/programming/pytesseract/</loc>
+    <loc>https://duaibeom.github.io/posts/pytesseract/</loc>
     <lastmod>2020-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/ml/mllecture/</loc>
+    <loc>https://duaibeom.github.io/posts/mllecture/</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/programming/pillow/</loc>
+    <loc>https://duaibeom.github.io/categories/machine_learning/</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/programming/plot/</loc>
+    <loc>https://duaibeom.github.io/posts/pillow/</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/programming/regexp/</loc>
+    <loc>https://duaibeom.github.io/posts/plot/</loc>
+    <lastmod>2020-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/regexp/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/computer/mariadb/</loc>
+    <loc>https://duaibeom.github.io/posts/mariadb/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/computer/how_to_tmux/</loc>
+    <loc>https://duaibeom.github.io/posts/how_to_tmux/</loc>
     <lastmod>2019-12-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/programming/python3/</loc>
+    <loc>https://duaibeom.github.io/categories/cheminfomatics/</loc>
     <lastmod>2019-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/programming/rdkit/</loc>
+    <loc>https://duaibeom.github.io/posts/python3/</loc>
     <lastmod>2019-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/computer/linux/</loc>
+    <loc>https://duaibeom.github.io/tags/rdkit/</loc>
+    <lastmod>2019-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/linux/</loc>
+    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/categories/mind/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -163,27 +223,42 @@
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/computer/computer_hard/</loc>
+    <loc>https://duaibeom.github.io/categories/computer/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/ml/machine_learning/</loc>
+    <loc>https://duaibeom.github.io/posts/computer_hard/</loc>
+    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/posts/machine_learning/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/programming/dart/</loc>
+    <loc>https://duaibeom.github.io/posts/dart/</loc>
     <lastmod>1111-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/programming/golang/</loc>
+    <loc>https://duaibeom.github.io/categories/dart/</loc>
     <lastmod>1111-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://duaibeom.github.io/tags/</loc>
+    <loc>https://duaibeom.github.io/posts/golang/</loc>
+    <lastmod>1111-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/categories/golang/</loc>
+    <lastmod>1111-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duaibeom.github.io/archives/</loc>
   </url>
   
 </urlset>

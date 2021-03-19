@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscode on Beom&#39;s Doodle</title>
+    <link>https://duaibeom.github.io/categories/vscode/</link>
+    <description>Recent content in vscode on Beom&#39;s Doodle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 20 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/categories/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VS Code</title>
+      <link>https://duaibeom.github.io/posts/vscode/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/vscode/</guid>
+      <description>VS Code option { &amp;#34;editor.suggestSelection&amp;#34;: &amp;#34;first&amp;#34;, &amp;#34;vsintellicode.modify.editor.suggestSelection&amp;#34;: &amp;#34;automaticallyOverrodeDefaultValue&amp;#34;, &amp;#34;python.languageServer&amp;#34;: &amp;#34;Pylance&amp;#34;, &amp;#34;git.ignoreLegacyWarning&amp;#34;: true, &amp;#34;python.linting.enabled&amp;#34;: true, &amp;#34;python.linting.flake8Enabled&amp;#34;: true, &amp;#34;python.linting.flake8Args&amp;#34;: [ &amp;#34;--ignore=E203&amp;#34;, // 천천히 확인 // &amp;#34;--ignore=E266&amp;#34;, &amp;#34;--ignore=E501&amp;#34;, &amp;#34;--ignore=W503&amp;#34;, // &amp;#34;--max-line-length=80&amp;#34;, // &amp;#34;--select = B,C,E,F,W,T4,B9&amp;#34;, &amp;#34;--select = B,C,E,F,W,B950&amp;#34;, &amp;#34;--max-complexity = 18&amp;#34; ], &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;python.formatting.provider&amp;#34;: &amp;#34;yapf&amp;#34;, &amp;#34;workbench.colorTheme&amp;#34;: &amp;#34;GitHub Dark&amp;#34;, &amp;#34;python.pythonPath&amp;#34;: &amp;#34;&amp;lt;Python-ENV&amp;gt;/bin/python&amp;#34; } </description>
+    </item>
+    
+  </channel>
+</rss>

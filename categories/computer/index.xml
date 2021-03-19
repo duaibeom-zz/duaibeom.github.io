@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer on Beom&#39;s Doodle</title>
+    <link>https://duaibeom.github.io/categories/computer/</link>
+    <description>Recent content in Computer on Beom&#39;s Doodle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://duaibeom.github.io/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>컴퓨터 하드웨어(Computer Hardware)</title>
+      <link>https://duaibeom.github.io/posts/computer_hard/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/computer_hard/</guid>
+      <description>비전공자가 작성한 컴퓨터 기초 SSD  SSD 설명 ~
+ 연속 읽기쓰기 MB/s
+임의 읽기쓰기 IOPS
+신뢰시간
+NAND flash: Not AND gate를 이용한 flash memory, 연속 읽기쓰기가 빠르다.
+NOR flash: Not OR gate를 이용한 flash memory, 임의 읽기쓰기가 빠르다.
+TBW(Terabytes Written): SSD 공간에 쓰기 가능한 총량(단위 TB)을 의미한다. TBW가 높으면 많이 파일을 쓰고 지워도 성능이 보장된다. &amp;ndash;&amp;gt; 내구성이 높다.
+데이터의 저장 방법: 방(Cell)안의 전자 유무에 따라 0 혹은 1을 의미한다.</description>
+    </item>
+    
+  </channel>
+</rss>

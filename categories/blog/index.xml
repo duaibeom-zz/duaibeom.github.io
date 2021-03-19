@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Beom&#39;s Doodle</title>
+    <link>https://duaibeom.github.io/categories/blog/</link>
+    <description>Recent content in blog on Beom&#39;s Doodle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 18 Mar 2020 11:30:39 +0900</lastBuildDate><atom:link href="https://duaibeom.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 블로그 생성 w/GitHub</title>
+      <link>https://duaibeom.github.io/posts/mk_hugo/</link>
+      <pubDate>Wed, 18 Mar 2020 11:30:39 +0900</pubDate>
+      
+      <guid>https://duaibeom.github.io/posts/mk_hugo/</guid>
+      <description>HUGO 블로그 생성  Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
+ Hugo 설치  MacOS - brew install hugo Ubuntu - snap install hugo  주의 - apt로 설치하면 구버전이 설치된다. snap을 이용하면 최신 버전으로 다운이 가능하다.   Window - ?  자세한 정보는 Hugo Docs의 Install Hugo 참조.
+Hugo로 블로그 생성 hugo version 을 통해 작동이 가능한지 확인한다.</description>
+    </item>
+    
+  </channel>
+</rss>
